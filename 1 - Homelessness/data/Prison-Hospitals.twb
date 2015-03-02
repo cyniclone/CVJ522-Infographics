@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='Prison (Deinstitutionalization)' inline='true' name='excel-direct.42064.945705243100' version='8.3'>
+      <connection class='excel-direct' cleaning='no' compat='no' filename='/Users/Nicolas/Desktop/git/CVJ522-Infographics/1 - Homelessness/data/Deinstitutionalization.xlsx'>
+        <relation name='Prison$' table='[Prison$]' type='table'>
+          <columns header='yes'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='string' name='State 1' ordinal='1' />
+            <column datatype='integer' name='Total number of prisoners in jails and state prisons, June 30, 2005' ordinal='2' />
+            <column datatype='integer' name='Estimated number of prisoners seriously mentally ill (16% of total)' ordinal='3' />
+            <column datatype='integer' name='Number of patients in state, private, and psychiatric units in general hospitals, 2004' ordinal='4' />
+            <column datatype='integer' name='TOTAL' ordinal='5' />
+            <column datatype='real' name='% PRISON' ordinal='6' />
+            <column datatype='real' name='% HOSPITAL' ordinal='7' />
+            <column datatype='real' name='Odds of a seriously mentally ill person being in jail or prison compared to in hospital' ordinal='8' />
+            <column datatype='integer' name='State Ranking based on per capita expenditures by state mental health authority, FY 2002 (lowest no. spends most)' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State 1]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>State 1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total number of prisoners in jails and state prisons, June 30, 2005</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total number of prisoners in jails and state prisons, June 30, 2005]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>Total number of prisoners in jails and state prisons, June 30, 2005</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated number of prisoners seriously mentally ill (16% of total)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated number of prisoners seriously mentally ill (16% of total)]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>Estimated number of prisoners seriously mentally ill (16% of total)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of patients in state, private, and psychiatric units in general hospitals, 2004</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of patients in state, private, and psychiatric units in general hospitals, 2004]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>Number of patients in state, private, and psychiatric units in general hospitals, 2004</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>TOTAL</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% PRISON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% PRISON]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>% PRISON</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% HOSPITAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% HOSPITAL]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>% HOSPITAL</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Odds of a seriously mentally ill person being in jail or prison compared to in hospital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Odds of a seriously mentally ill person being in jail or prison compared to in hospital]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>Odds of a seriously mentally ill person being in jail or prison compared to in hospital</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Ranking based on per capita expenditures by state mental health authority, FY 2002 (lowest no. spends most)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State Ranking based on per capita expenditures by state mental health authority, FY 2002 (lowest no. spends most)]</local-name>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias>State Ranking based on per capita expenditures by state mental health authority, FY 2002 (lowest no. spends most)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[Prison$]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Hospital' datatype='real' name='[% HOSPITAL]' role='measure' type='quantitative'>
+      </column>
+      <column caption='% Prison' datatype='real' name='[% PRISON]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Total' datatype='integer' name='[TOTAL]' role='measure' type='quantitative'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Prison (Deinstitutionalization)' name='excel-direct.42064.945705243100' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42064.945705243100'>
+            <column caption='% Prison' datatype='real' name='[% PRISON]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column-instance column='[State 1]' derivation='None' name='[none:State 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[% PRISON]' derivation='Sum' name='[sum:% PRISON:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[excel-direct.42064.945705243100].[none:State 1:nk]' direction='DESC' using='[excel-direct.42064.945705243100].[sum:% PRISON:qk]'>
+          </sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#437564' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.42064.945705243100].[none:State 1:nk]</rows>
+        <cols>[excel-direct.42064.945705243100].[sum:% PRISON:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42064.945705243100].[:Measure Names]</field>
+          <field>[excel-direct.42064.945705243100].[none:State 1:nk]</field>
+          <field>[excel-direct.42064.945705243100].[none:State:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
