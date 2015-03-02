@@ -1,0 +1,19 @@
+Bibliography
+An Institutionalization Effect: The Impact of Mental Hospitalization and
+Imprisonment on Homicide in the United States, 1934 - 2001
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 34986. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. This list represents all items known
+to ICPSR as of 2015-03-02.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+bibliography@icpsr.umich.edu.
+
+
+1. Harcourt, Bernard, "An institutionalization effect: The impact of mental
+hospitalization and imprisionment on homicide in the United States, 1934-
+2001." Journal of Legal Studies. Jan 2011, 40, 39 - 83.
+Full text: http://www.jstor.org/stable/10.1086/658404

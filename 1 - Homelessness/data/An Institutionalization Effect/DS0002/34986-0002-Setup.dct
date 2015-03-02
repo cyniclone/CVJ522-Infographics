@@ -1,0 +1,28 @@
+dictionary {
+
+*****************************************************************
+* STATA DICTIONARY FOR ICPSR 34986
+* AN INSTITUTIONALIZATION EFFECT: THE IMPACT OF MENTAL
+* HOSPITALIZATION AND IMPRISONMENT ON HOMICIDE IN THE UNITED
+* STATES, 1934 - 2001
+* (DATASET 0002: NATIONAL DATA)
+*
+* Warning: Edit this file at your own risk
+*
+*****************************************************************
+
+_lines(1)
+
+_line(1)
+
+_column(1)     int   YEAR               %4f    "Year"
+_column(5)     long  ADULTPOP           %6f    "Adult Population"
+_column(11)    double PRISONPOP           %15.7f "Prison Population"
+_column(26)    double SJAILPOP           %14.7f "Jail Population"
+_column(40)    double ALLRESMH           %9.2f  "Mental Hospital Population"
+_column(49)    double HOMICIDERATE           %15.12f "Homicide Rate"
+_column(64)    double YOUTHPOPRATE           %15.12f "Youth Rate"
+_column(79)    double UNEMPLOYRATE           %15.12f "Unemployment Rate"
+_column(94)    double POVERTYRATE           %15.12f "Poverty Rate"
+_column(109)   double PRISONRATE           %15.11f "Prison Rate"
+}

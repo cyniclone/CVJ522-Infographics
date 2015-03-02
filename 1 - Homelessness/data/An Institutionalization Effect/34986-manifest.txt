@@ -1,0 +1,76 @@
+File Manifest for ICPSR 34986
+
+Harcourt, Bernard. An Institutionalization Effect: The Impact of Mental
+Hospitalization and Imprisonment on Homicide in the United States, 1934 -
+2001. ICPSR34986-v1. Ann Arbor, MI: Inter-university Consortium for
+Political and Social Research[distributor], 2014-05-14.
+http://doi.org/10.3886/ICPSR34986.v1
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    34986-related_literature.txt        -       -         -       2015-03-01  -
+
+    34986-manifest.txt                  -       -         -       2015-03-02  -
+
+
+DS0001 State Level Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    34986-0001-Codebook.pdf             -       -         -       2014-05-14  33d25dc2faa064010aea2df3c9a9174f
+
+    34986-0001-Data.dta                 -       4,100     20      2014-05-14  b2409ad4aecb05923ab2d361d490873f
+
+    34986-0001-Data.rda                 -       4,100     20      2014-05-14  504a60d518d353dc20546ce2ec1279e8
+
+    34986-0001-Data.sav                 -       4,100     20      2014-05-14  86b66f05939e9942b54dfec1a602c484
+
+    34986-0001-Data.stc                 -       4,100     20      2014-05-14  b7438bd991062408e7839d72e9291794
+
+    34986-0001-Data.tsv                 -       4,100     20      2014-05-14  cdcf61cf01b4d31887e6711d13336bc6
+
+    34986-0001-Data.txt                 240     4,100     20      2014-05-14  d369a823bc764f10a10b0342acb50bbf
+
+    34986-0001-Report.pdf               -       -         -       2014-05-14  11517b1e397443d7455d2a16cf675e6a
+
+    34986-0001-Setup.dct                -       -         -       2014-05-14  7cdba20f2a12a46a920e8041fca732fd
+
+    34986-0001-Setup.do                 -       -         -       2014-05-14  833bdf397649f158219f93beb1e53a82
+
+    34986-0001-Setup.sas                -       -         -       2014-05-14  9321dd1c28d0aab08a9b3878112b75e9
+
+    34986-0001-Setup.sps                -       -         -       2014-05-14  924da934d0c7518b581ce5e0b2b2d334
+
+
+DS0002 National Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    34986-0002-Codebook.pdf             -       -         -       2014-05-14  d8a9e9dd0788cc02a79424c0478193f8
+
+    34986-0002-Data.dta                 -       68        10      2014-05-14  81f103bcd22da33881e04376528e509b
+
+    34986-0002-Data.rda                 -       68        10      2014-05-14  f7f5a951764f3f7027026277c5e35837
+
+    34986-0002-Data.sav                 -       68        10      2014-05-14  6cd2f3cdae0a9561bd2f085977387927
+
+    34986-0002-Data.stc                 -       68        10      2014-05-14  307759190f9c5f01ead5d1a28a71afe1
+
+    34986-0002-Data.tsv                 -       68        10      2014-05-14  c89cd8c7a3e2cf10373860fcfaedf314
+
+    34986-0002-Data.txt                 123     68        10      2014-05-14  9648ea9aec92aadb821bf5fc0de68f40
+
+    34986-0002-Setup.dct                -       -         -       2014-05-14  cd6c0580ec81b44f72869224ff6f9f38
+
+    34986-0002-Setup.do                 -       -         -       2014-05-14  0404283621653ce964d412e55d18458a
+
+    34986-0002-Setup.sas                -       -         -       2014-05-14  917ff4d23e0b7202c6551ee139647d9a
+
+    34986-0002-Setup.sps                -       -         -       2014-05-14  78292f1a13b66bd629b9fad106f5a370
+
