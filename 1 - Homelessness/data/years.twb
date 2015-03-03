@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='AnInstitEffect (Deinstitutionalization)' inline='true' name='excel-direct.42065.522778067100' version='8.3'>
+      <connection class='excel-direct' cleaning='no' compat='no' filename='/Users/Nicolas/Desktop/git/CVJ522-Infographics/1 - Homelessness/data/Deinstitutionalization.xlsx'>
+        <relation name='AnInstitEffect$' table='[AnInstitEffect$]' type='table'>
+          <columns header='yes'>
+            <column datatype='date' name='yeardate' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='integer' name='adultpop' ordinal='2' />
+            <column datatype='real' name='prisonpop' ordinal='3' />
+            <column datatype='real' name='sjailpop' ordinal='4' />
+            <column datatype='real' name='allresMH' ordinal='5' />
+            <column datatype='real' name='homiciderate' ordinal='6' />
+            <column datatype='real' name='youthpoprate' ordinal='7' />
+            <column datatype='real' name='unemployrate' ordinal='8' />
+            <column datatype='real' name='povertyrate' ordinal='9' />
+            <column datatype='real' name='prisonrate' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>yeardate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[yeardate]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>yeardate</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adultpop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adultpop]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>adultpop</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prisonpop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prisonpop]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>prisonpop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sjailpop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sjailpop]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>sjailpop</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allresMH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[allresMH]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>allresMH</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>homiciderate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[homiciderate]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>homiciderate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>youthpoprate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[youthpoprate]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>youthpoprate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unemployrate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployrate]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>unemployrate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>povertyrate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[povertyrate]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>povertyrate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prisonrate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prisonrate]</local-name>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias>prisonrate</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[AnInstitEffect$]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Sjailpop (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[sjailpop]' peg='0' size='50000' />
+      </column>
+      <column caption='Adultpop' datatype='integer' name='[adultpop]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Allres MH' datatype='real' name='[allresMH]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Homiciderate' datatype='real' name='[homiciderate]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Povertyrate' datatype='real' name='[povertyrate]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Prisonpop' datatype='real' name='[prisonpop]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Prisonrate' datatype='real' name='[prisonrate]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Sjailpop' datatype='real' name='[sjailpop]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Unemployrate' datatype='real' name='[unemployrate]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative'>
+      </column>
+      <column aggregation='Count' caption='Yeardate' datatype='date' name='[yeardate]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Youthpoprate' datatype='real' name='[youthpoprate]' role='measure' type='quantitative'>
+      </column>
+      <column-instance column='[yeardate]' derivation='Count' name='[cnt:yeardate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[allresMH]' derivation='Sum' name='[sum:allresMH:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[prisonpop]' derivation='Sum' name='[sum:prisonpop:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sjailpop]' derivation='Sum' name='[sum:sjailpop:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[excel-direct.42065.522778067100].[sum:allresMH:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[excel-direct.42065.522778067100].[cnt:yeardate:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[excel-direct.42065.522778067100].[sum:sjailpop:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel-direct.42065.522778067100].[sum:prisonpop:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AnInstitEffect (Deinstitutionalization)' name='excel-direct.42065.522778067100' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42065.522778067100'>
+            <column caption='Allres MH' datatype='real' name='[allresMH]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Prisonpop' datatype='real' name='[prisonpop]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Sjailpop' datatype='real' name='[sjailpop]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[allresMH]' derivation='Sum' name='[sum:allresMH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[prisonpop]' derivation='Sum' name='[sum:prisonpop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sjailpop]' derivation='Sum' name='[sum:sjailpop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yeardate]' derivation='Year-Trunc' name='[tyr:yeardate:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Yeardate' datatype='date' name='[yeardate]' role='dimension' type='ordinal'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='1' y-axis-name='[excel-direct.42065.522778067100].[sum:allresMH:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='2' y-axis-name='[excel-direct.42065.522778067100].[sum:prisonpop:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='3' y-axis-name='[excel-direct.42065.522778067100].[sum:sjailpop:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>([excel-direct.42065.522778067100].[sum:allresMH:qk] + ([excel-direct.42065.522778067100].[sum:prisonpop:qk] + [excel-direct.42065.522778067100].[sum:sjailpop:qk]))</rows>
+        <cols>[excel-direct.42065.522778067100].[tyr:yeardate:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42065.522778067100].[:Measure Names]</field>
+          <field>[excel-direct.42065.522778067100].[Sjailpop (bin)]</field>
+          <field>[excel-direct.42065.522778067100].[yr:yeardate:ok]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      /wEnEC4M2/P+HgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
