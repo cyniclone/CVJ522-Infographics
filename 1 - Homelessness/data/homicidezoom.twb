@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='TableauHomicideResidents (Deinstitutionalization)' inline='true' name='excel-direct.42068.045195081000' version='8.3'>
+      <connection class='excel-direct' cleaning='no' compat='no' filename='/Users/Nicolas/Desktop/git/CVJ522-Infographics/1 - Homelessness/data/Deinstitutionalization.xlsx'>
+        <relation name='TableauHomicideResidents$' table='[TableauHomicideResidents$]' type='table'>
+          <columns header='yes'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Number of Hospitals' ordinal='1' />
+            <column datatype='integer' name='Resident patients at end of year' ordinal='2' />
+            <column datatype='string' name='Admissions' ordinal='3' />
+            <column datatype='string' name='Net Releases' ordinal='4' />
+            <column datatype='string' name='Additions' ordinal='5' />
+            <column datatype='string' name='Discontinuations' ordinal='6' />
+            <column datatype='integer' name='Deaths' ordinal='7' />
+            <column datatype='real' name='Homicide Rate' ordinal='8' />
+            <column datatype='real' name='Residents per 100,000' ordinal='9' />
+            <column datatype='string' name='F11' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Hospitals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Hospitals]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Number of Hospitals</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resident patients at end of year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Resident patients at end of year]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Resident patients at end of year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Admissions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Admissions]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Admissions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Releases</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Net Releases]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Net Releases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Additions]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Additions</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discontinuations</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Discontinuations]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Discontinuations</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Homicide Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Homicide Rate]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Homicide Rate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Residents per 100,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Residents per 100,000]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>Residents per 100,000</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[TableauHomicideResidents$]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TableauHomicideResidents (Deinstitutionalization)' name='excel-direct.42068.045195081000' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42068.045195081000'>
+            <column datatype='real' name='[Homicide Rate]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[Residents per 100,000]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
+            </column>
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Homicide Rate]' derivation='Sum' name='[sum:Homicide Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Residents per 100,000]' derivation='Sum' name='[sum:Residents per 100,000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[excel-direct.42068.045195081000].[none:Year:qk]' included-values='in-range'>
+            <min>1950</min>
+            <max>1964</max>
+          </filter>
+          <slices>
+            <column>[excel-direct.42068.045195081000].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[excel-direct.42068.045195081000].[sum:Homicide Rate:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[excel-direct.42068.045195081000].[sum:Homicide Rate:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[excel-direct.42068.045195081000].[sum:Homicide Rate:qk]' field-type='quantitative' max='5.25' min='3.75' range-type='fixed' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[excel-direct.42068.045195081000].[sum:Residents per 100,000:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[excel-direct.42068.045195081000].[sum:Residents per 100,000:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[excel-direct.42068.045195081000].[sum:Residents per 100,000:qk]' field-type='quantitative' max='6.0' min='4.5' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[excel-direct.42068.045195081000].[none:Year:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[excel-direct.42068.045195081000].[sum:Residents per 100,000:qk]</rows>
+        <cols>[excel-direct.42068.045195081000].[sum:Homicide Rate:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42068.045195081000].[none:Year:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
