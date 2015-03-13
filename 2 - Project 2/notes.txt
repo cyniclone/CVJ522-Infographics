@@ -1,0 +1,27 @@
+NOTES
+
+R
+	# Load object
+	load("~/Desktop/ICPSR_35509/DS0001/35509-0001-Data.rda")
+
+	# Assign to data variable (for ease of reference)
+	data <- da35509.0001
+
+	# Choose the columns you want to view (there is a hard cutoff)
+	View(data[101:200])
+
+R-DAS:
+	http://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/rdas.html
+
+R-DAS Codebook:
+	http://www.icpsr.umich.edu/SDA/SAMHDA/34482-0001/CODEBOOK/hcbk.htm
+
+
+
+Stuff to measure
+	% use by country
+	http://www.unodc.org/documents/data-and-analysis/WDR2011/StatAnnex-consumption.pdf
+
+	# of deaths/overdose
+
+	Trade routes
