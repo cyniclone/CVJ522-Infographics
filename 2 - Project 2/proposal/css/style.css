@@ -40,9 +40,13 @@ h3 {
 	text-decoration: underline;
 }
 
-
 hr {
 	color: #BFBFBF;
+}
+
+img {
+	margin-top: 20px;
+	margin-right: 20px;
 }
 
 p {

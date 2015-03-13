@@ -13,6 +13,14 @@ R
 R-DAS:
 	http://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/rdas.html
 
+	# How to recode, age as example
+	Row: AGE: FINAL EDITED AGE
+	r: 12-25; 26-55; 56-*
+
+	# Using Filter
+	# Example: Restrict subset to only people who have used H in past 30 days
+	Selection Filter(s): IRHERRC(1)
+
 R-DAS Codebook:
 	http://www.icpsr.umich.edu/SDA/SAMHDA/34482-0001/CODEBOOK/hcbk.htm
 
