@@ -32,4 +32,16 @@ Stuff to measure
 
 	# of deaths/overdose
 
-	Trade routes
+	# Trade routes
+	http://www.unodc.org/unodc/en/drug-trafficking/
+
+	# of Users
+	https://www.whitehouse.gov/sites/default/files/ondcp/policy-and-research/wausid_results_report.pdf
+
+	# National drug control strategy
+	# Number of initiates, average user age etc.
+	https://www.whitehouse.gov/sites/default/files/ondcp/policy-and-research/ndcs_data_supplement_2014.pdf
+
+	# Heroin Overdoses - Look for spreadsheet
+	# Source: National Center on Health Statistics, CDC WONDER
+	http://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates
