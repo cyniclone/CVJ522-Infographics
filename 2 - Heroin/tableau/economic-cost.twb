@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='EconomicCost (h)' inline='true' name='excel-direct.42077.879745671300' version='8.3'>
+      <connection class='excel-direct' cleaning='no' compat='no' filename='/Users/Nicolas/Desktop/git/CVJ522-Infographics/2 - Heroin/h.xlsx'>
+        <relation name='EconomicCost$' table='[EconomicCost$]' type='table'>
+          <columns header='yes'>
+            <column datatype='date' name='Year' ordinal='0' />
+            <column datatype='integer' name='TOTAL' ordinal='1' />
+            <column datatype='integer' name='Health Care Costs' ordinal='2' />
+            <column datatype='integer' name='Other Costs' ordinal='3' />
+            <column datatype='integer' name='Productivity Losses' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[EconomicCost$]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL]</local-name>
+            <parent-name>[EconomicCost$]</parent-name>
+            <remote-alias>TOTAL</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Care Costs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health Care Costs]</local-name>
+            <parent-name>[EconomicCost$]</parent-name>
+            <remote-alias>Health Care Costs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Costs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Costs]</local-name>
+            <parent-name>[EconomicCost$]</parent-name>
+            <remote-alias>Other Costs</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Productivity Losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Productivity Losses]</local-name>
+            <parent-name>[EconomicCost$]</parent-name>
+            <remote-alias>Productivity Losses</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[EconomicCost$]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Health Care Costs]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Other Costs]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Productivity Losses]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Total' datatype='integer' name='[TOTAL]' role='measure' type='quantitative'>
+      </column>
+      <column caption='YEAR' datatype='date' name='[Year (Years)]' role='dimension' type='quantitative' user:agg-type='Year-Trunc' user:base-field='Year' user:ui-builder='date-bin-builder'>
+        <calculation class='tableau' formula='DATE(DATETRUNC(&apos;year&apos;, [Year]))' />
+      </column>
+      <column aggregation='Count' datatype='date' name='[Year]' role='dimension' type='ordinal'>
+      </column>
+      <column-instance column='[Health Care Costs]' derivation='Sum' name='[sum:Health Care Costs:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Other Costs]' derivation='Sum' name='[sum:Other Costs:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Productivity Losses]' derivation='Sum' name='[sum:Productivity Losses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TOTAL]' derivation='Sum' name='[sum:TOTAL:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[excel-direct.42077.879745671300].[sum:Health Care Costs:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[excel-direct.42077.879745671300].[sum:Other Costs:qk]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[excel-direct.42077.879745671300].[sum:TOTAL:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel-direct.42077.879745671300].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel-direct.42077.879745671300].[sum:Productivity Losses:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Economic Cost of Drug Use (in $Millions)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EconomicCost (h)' name='excel-direct.42077.879745671300' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42077.879745671300'>
+            <column datatype='integer' name='[Health Care Costs]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='integer' name='[Other Costs]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='integer' name='[Productivity Losses]' role='measure' type='quantitative'>
+            </column>
+            <column caption='YEAR' datatype='date' name='[Year (Years)]' role='dimension' type='quantitative' user:agg-type='Year-Trunc' user:base-field='Year' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;year&apos;, [Year]))' />
+            </column>
+            <column-instance column='[Year (Years)]' derivation='None' name='[none:Year (Years):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Health Care Costs]' derivation='Sum' name='[sum:Health Care Costs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Other Costs]' derivation='Sum' name='[sum:Other Costs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Productivity Losses]' derivation='Sum' name='[sum:Productivity Losses:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[excel-direct.42077.879745671300].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel-direct.42077.879745671300].[sum:Health Care Costs:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel-direct.42077.879745671300].[sum:Other Costs:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel-direct.42077.879745671300].[sum:Productivity Losses:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[excel-direct.42077.879745671300].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[excel-direct.42077.879745671300].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[excel-direct.42077.879745671300].[Multiple Values]</rows>
+        <cols>[excel-direct.42077.879745671300].[none:Year (Years):ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Economic Cost of Drug Use (in $Millions)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='0' param='[excel-direct.42077.879745671300].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='300'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42077.879745671300].[:Measure Names]</field>
+          <field>[excel-direct.42077.879745671300].[none:Year (Years):ok]</field>
+          <field>[excel-direct.42077.879745671300].[none:Year (Years):qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Economic Cost of Drug Use (in $Millions)' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
