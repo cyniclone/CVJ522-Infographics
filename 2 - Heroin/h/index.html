@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Project 2</title>
+	</head>
+
+	<body>
+
+
+
+	<div class="header">
+	<h2>Heroin: A Scourge on Society</h2>
+	by Nicolas Aguirre
+	</div>
+
+	<div class="story">
+	<p>
+	<h2>Project Overview</h2><hr>
+
+	<p>
+		Project 2 will visualize data relating to the chemical diacetylmorphine, more commonly known as "heroin." The project aims to divulge trends in consumption, demographics of use, geographic trends (with focus on the U.S.), death toll and other relevant data. The idea is to give the audience an article that they can read in 10-15 minutes and have a good understanding of the issue at hand.
+	</p>
+	<br>
+
+	<h3>Style</h3>
+	
+	<p>
+		Due to the nature its subject matter, this project strives for seriousness. Stylistic components will be restained for the most part, though creative flair may emerge where necessary. Graphical components will focus on function rather than form. The style should tell a story accurately while presenting data in a meaningful, comprehensible format.
+	</p>
+	<br>
+
+	<h3>Client</h3>
+	
+	<p>
+		The client would ideally be an NGO. Some that come to mind are:
+		<ul>
+			<li><a href="http://www.samhsa.gov/data/">SAMHSA</a> (Substance Abuse and Mental Health Services Administration)</li>
+			<li><a href="http://www.cdc.gov/datastatistics/">CDC</a> (Center for Disease Control)</li>
+			<li><a href="http://www.drugabuse.gov/">NIDA</a> (National Institute on Drug Abuse)</li>
+			<li><a href="http://www.bjs.gov/index.cfm?ty=dca">BJS</a> (Bureau of Justice Statistics)</li>
+			<li><a href="http://www.unodc.org/unodc/en/data-and-analysis/WDR-2012.html">UNODC</a> (United Nations Office on Drugs and Crime)
+			</li>
+		</ul>
+
+		These will also serve as key data sources as they publish major reports regarding crime, drug abuse, and mental health issues.
+
+		The graphic is intended to present readers with educational information that reveals the devastating societal damage caused by the production and consumption of heroin.
+	</p>
+	<br>
+
+	<h3>Format</h3>
+	
+	<p>
+		This story will exist as a webpage with charts, maps, and possibly interactive components (depending on availability of data). 
+	</p>
+	</div>
+
+	<div class="story">
+	<h2>Core Components</h2><hr>
+	
+	<p>
+	This section represents the key elements that will comprise the project. This is intended serve as a schematic for what data will be visualized, and the general composition of the project
+	</p>
+
+	<h3>What is Heroin?</h3>
+	<p>
+	A brief narrative that explains the drug in question. Mechanism of action will be covered briefly.
+	</p>
+
+	<h3>Who uses Heroin?</h3>
+	<p>
+	Demographic data such as race and age will be included.	Below is an example of the kind of data that can be retrieved through SAMHSA's R-DAS (Restricted-Use Data Analysis System). This will be stylized; it is only shown for prototyping purposes. The data is from the years 2010-2011 (most recent published by SAMHSA) and is for the U.S. population.
+	<br><br>
+	Demographics:
+	<br><br>
+
+	<!--- PIE CHART FOR DEMOGRAPHICS -->
+
+
+	<div id="pieChart"></div>
+
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3pie.min.js"></script>
+	<script>
+	var pie = new d3pie("pieChart", {
+		"header": {
+			"title": {
+				"text": "Race of Users",
+				"fontSize": 22,
+				"font": "verdana"
+			},
+			"subtitle": {
+				"text": "Frequency in Thousands",
+				"color": "#999999",
+				"fontSize": 10,
+				"font": "verdana"
+			},
+			"titleSubtitlePadding": 12
+		},
+		"footer": {
+			"text": "Source: SAMHSA, 2010-2011",
+			"color": "#999999",
+			"fontSize": 11,
+			"font": "open sans",
+			"location": "bottom-center"
+		},
+		"size": {
+			"canvasHeight": 400,
+			"canvasWidth": 590,
+			"pieInnerRadius": "59%",
+			"pieOuterRadius": "97%"
+		},
+		"data": {
+			"content": [
+				{
+					"label": "Hispanic",
+					"value": 37,
+					"color": "#7e3838"
+				},
+				{
+					"label": "Other or Multiple, Not Hispanic",
+					"value": 8,
+					"color": "#7e6538"
+				},
+				{
+					"label": "Black, Not Hispanic",
+					"value": 73,
+					"color": "#7c7e38"
+				},
+				{
+					"label": "White, Not Hispanic",
+					"value": 150,
+					"color": "#386a7e"
+				}
+			]
+		},
+		"labels": {
+			"outer": {
+				"pieDistance": 32
+			},
+			"inner": {
+				"format": "value"
+			},
+			"mainLabel": {
+				"font": "verdana"
+			},
+			"percentage": {
+				"color": "#e1e1e1",
+				"font": "verdana",
+				"decimalPlaces": 0
+			},
+			"value": {
+				"color": "#e1e1e1",
+				"font": "verdana"
+			},
+			"lines": {
+				"enabled": true,
+				"color": "#cccccc"
+			}
+		},
+		"effects": {
+			"pullOutSegmentOnClick": {
+				"effect": "linear",
+				"speed": 400,
+				"size": 8
+			}
+		}
+	});
+	</script>
+
+	<img src="pic/heroin-users-demographic.png">
+	<img src="pic/heroin-users-age.png"
+	</p>
+	<br><br>
+	<p>
+	Users by Frequency:
+	<br><br>
+	<img src="pic/users-frequency.png"
+	</p>
+
+	<h3>Consumption, Production, and Transportation</h3>
+	<p>
+	This section will contain key statistics and information that illustrates the volume of the heroin market. Much of this information is available from a <a href="http://www.unodc.org/documents/wdr2014/World_Drug_Report_2014_web.pdf">report</a> published by the UNODC.
+
+	<br><br>
+	Prevalence of Opioid (Heroin and Painkiller) Use:
+	<br><br>
+	<img src="pic/opioid-prevalence.png"
+
+	</p>
+
+	<h3>Consequences and Costs</h3>
+	<p>
+	This section will detail death tolls, overdoses and other societal harm done by heroin.
+	<br><br>
+	Overdoses:
+	<br><br>
+	<img src="pic/num-od.png">
+	<br><br>
+	Economic Cost: (All Drugs; not just Heroin)
+	<br><br>
+	<img src="pic/economic-cost.png">
+	</p>
+
+	</div>
+
+	</body>
+
+<html>
