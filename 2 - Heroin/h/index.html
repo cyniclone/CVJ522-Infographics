@@ -83,7 +83,8 @@
 	<script src="js/d3.min.js"></script>
 	<script src="js/d3pie.min.js"></script>
 	<script>
-	var pie = new d3pie("pieChart", {
+	// Race of Users
+	var pie1 = new d3pie("pieChart", {
 		"header": {
 			"title": {
 				"text": "Race of Users",
@@ -108,36 +109,117 @@
 		"size": {
 			"canvasHeight": 400,
 			"canvasWidth": 590,
-			"pieInnerRadius": "59%",
-			"pieOuterRadius": "97%"
+			"pieInnerRadius": "50%",
+			"pieOuterRadius": "90%"
 		},
 		"data": {
 			"content": [
 				{
 					"label": "Hispanic",
 					"value": 37,
-					"color": "#7e3838"
+					"color": "#AB967C"
 				},
 				{
 					"label": "Other or Multiple, Not Hispanic",
 					"value": 8,
-					"color": "#7e6538"
+					"color": "#55514C"
 				},
 				{
 					"label": "Black, Not Hispanic",
 					"value": 73,
-					"color": "#7c7e38"
+					"color": "#7E694E"
 				},
 				{
 					"label": "White, Not Hispanic",
 					"value": 150,
-					"color": "#386a7e"
+					"color": "#624724"
 				}
 			]
 		},
 		"labels": {
 			"outer": {
-				"pieDistance": 32
+				"pieDistance": 16
+			},
+			"inner": {
+				"format": "value"
+			},
+			"mainLabel": {
+				"font": "verdana"
+			},
+			"percentage": {
+				"color": "#e1e1e1",
+				"font": "verdana",
+				"decimalPlaces": 0
+			},
+			"value": {
+				"color": "#e1e1e1",
+				"font": "verdana"
+			},
+			"lines": {
+				"enabled": true,
+				"color": "#cccccc"
+			}
+		},
+		"effects": {
+			"pullOutSegmentOnClick": {
+				"effect": "linear",
+				"speed": 400,
+				"size": 8
+			}
+		}
+	});
+
+	// Age of Users
+	var pie2 = new d3pie("pieChart", {
+		"header": {
+			"title": {
+				"text": "Age of Users",
+				"fontSize": 22,
+				"font": "verdana"
+			},
+			"subtitle": {
+				"text": "Frequency in Thousands",
+				"color": "#999999",
+				"fontSize": 10,
+				"font": "verdana"
+			},
+			"titleSubtitlePadding": 12
+		},
+		"footer": {
+			"text": "Source: SAMHSA, 2010-2011",
+			"color": "#999999",
+			"fontSize": 11,
+			"font": "open sans",
+			"location": "bottom-center"
+		},
+		"size": {
+			"canvasHeight": 400,
+			"canvasWidth": 590,
+			"pieInnerRadius": "50%",
+			"pieOuterRadius": "90%"
+		},
+		"data": {
+			"content": [
+				{
+					"label": "12-25",
+					"value": 111,
+					"color": "#AB967C"
+				},
+				{
+					"label": "26-65",
+					"value": 145,
+					"color": "#7E694E"
+				},
+				{
+					"label": "55+",
+					"value": 12,
+					"color": "#55514C"
+				}
+			]
+		},
+		"labels": {
+			"outer": {
+				"pieDistance": 16
 			},
 			"inner": {
 				"format": "value"
@@ -168,9 +250,10 @@
 		}
 	});
 	</script>
+	<!--- End Pie Chart -->
 
-	<img src="pic/heroin-users-demographic.png">
-	<img src="pic/heroin-users-age.png"
+	<!-- <img src="pic/heroin-users-demographic.png"> -->
+	<!-- <img src="pic/heroin-users-age.png" -->
 	</p>
 	<br><br>
 	<p>
