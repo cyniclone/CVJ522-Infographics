@@ -77,7 +77,6 @@
 
 	<!--- PIE CHART FOR DEMOGRAPHICS -->
 
-
 	<div id="pieChart"></div>
 
 	<script src="js/d3.min.js"></script>
@@ -109,7 +108,7 @@
 		"size": {
 			"canvasHeight": 400,
 			"canvasWidth": 590,
-			"pieInnerRadius": "50%",
+			"pieInnerRadius": "45%",
 			"pieOuterRadius": "90%"
 		},
 		"data": {
@@ -117,22 +116,22 @@
 				{
 					"label": "Hispanic",
 					"value": 37,
-					"color": "#AB967C"
+					"color": "#C8B599"
 				},
 				{
-					"label": "Other or Multiple, Not Hispanic",
+					"label": "Other, Not Hispanic",
 					"value": 8,
-					"color": "#55514C"
+					"color": "#7A5F37"
 				},
 				{
 					"label": "Black, Not Hispanic",
 					"value": 73,
-					"color": "#7E694E"
+					"color": "#9B7F54"
 				},
 				{
 					"label": "White, Not Hispanic",
 					"value": 150,
-					"color": "#624724"
+					"color": "#958977"
 				}
 			]
 		},
@@ -144,7 +143,8 @@
 				"format": "value"
 			},
 			"mainLabel": {
-				"font": "verdana"
+				"font": "verdana",
+				"fontSize": 11
 			},
 			"percentage": {
 				"color": "#e1e1e1",
@@ -180,7 +180,7 @@
 			"subtitle": {
 				"text": "Frequency in Thousands",
 				"color": "#999999",
-				"fontSize": 10,
+				"fontSize": 11,
 				"font": "verdana"
 			},
 			"titleSubtitlePadding": 12
@@ -195,7 +195,7 @@
 		"size": {
 			"canvasHeight": 400,
 			"canvasWidth": 590,
-			"pieInnerRadius": "50%",
+			"pieInnerRadius": "45%",
 			"pieOuterRadius": "90%"
 		},
 		"data": {
@@ -203,17 +203,17 @@
 				{
 					"label": "12-25",
 					"value": 111,
-					"color": "#AB967C"
+					"color": "#C8B599"
 				},
 				{
 					"label": "26-65",
 					"value": 145,
-					"color": "#7E694E"
+					"color": "#958977"
 				},
 				{
 					"label": "55+",
 					"value": 12,
-					"color": "#55514C"
+					"color": "#9B7F54"
 				}
 			]
 		},
@@ -225,7 +225,8 @@
 				"format": "value"
 			},
 			"mainLabel": {
-				"font": "verdana"
+				"font": "verdana",
+				"fontSize": 11
 			},
 			"percentage": {
 				"color": "#e1e1e1",
@@ -259,7 +260,7 @@
 	<p>
 	Users by Frequency:
 	<br><br>
-	<img src="pic/users-frequency.png"
+	<img src="pic/users-frequency.png">
 	</p>
 
 	<h3>Consumption, Production, and Transportation</h3>
@@ -269,7 +270,163 @@
 	<br><br>
 	Prevalence of Opioid (Heroin and Painkiller) Use:
 	<br><br>
-	<img src="pic/opioid-prevalence.png"
+	<!-- <img src="pic/opioid-prevalence.png"> -->
+
+	<!-- Choropleth goes here -->
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+	      ['Country', 'Prevalence'],
+          ['Kenya',   		0.21],
+	      ['Mauritius',   	1.29],
+	      ['Rwanda',  		0.14],
+	      ['Seychelles', 	 2.3],
+	      ['Somalia',  		 0.16],
+	      ['Uganda',   		0.05],
+	      ['Algeria', 		  0.06],
+	      ['Egypt',  		 0.44],
+	      ['Libya',   		0.14],
+	      ['Morocco',  		 0.08],
+	      ['Tunisia',  		 0.12],
+	      ['South Africa', 	 0.5],
+	      ['Swaziland', 	0.17],
+	      ['Zambia', 		 0.37],
+	      ['Zimbabwe',  	0.04],
+	      ['Central African Republic',  0.05],
+	      ['Chad', 			 0.22],
+	      ['Cabo Verde', 	 0.18],
+	      ['Ghana',  		 0.14],
+	      ['Liberia',  		 0.17],
+	      ['Niger',  		  0.2],
+	      ['Nigeria', 		  0.7],
+	      ['Congo',  		 0.13],
+	      ['Senegal', 		 0.08],
+	      ['Sierra Leone', 	 0.17],
+	      ['Democratic Republic of the Congo',  0.17],
+	      ['Barbados',  		  0.23],
+	      ['Bermuda',  			  0.15],
+	      ['Bahamas', 			  0.22],
+	      ['Dominican Republic',  0.07],
+	      ['Haiti',   			    	0.2],
+	      ['Jamaica',  			     	  1],
+	      ['Belize', 				    0.3],
+	      ['Costa Rica', 			   0.63],
+	      ['El Salvador', 			   0.14],
+	      ['Guatemala',  			   0.04],
+	      ['Honduras', 				   0.15],
+	      ['Nicaragua', 			   0.02],
+	      ['Canada', 			 		0.3],
+	      ['Mexico', 				   0.38],
+	      ['United States of America',  6.1],
+	      ['Argentina', 			  0.1],
+	      ['Bolivia', 			  0.6],
+	      ['Brazil', 			 1.45],
+	      ['Chile',  			 0.28],
+	      ['Colombia',			  0.02],
+	      ['Ecuador',  			 0.07],
+	      ['Paraguay', 			 0.03],
+	      ['Peru', 			 0.18],
+	      ['Uruguay',   		0.18],
+	      ['Venezuela',  			 0.03],
+	      ['Armenia',  				 0.16],
+	      ['Azerbaijan', 			 1.5],
+	      ['Georgia',  			 1.36],
+	      ['Kazakhstan', 			 1],
+	      ['Kyrgyzstan', 			 0.8],
+	      ['Tajikistan', 			 0.54],	
+	      ['Turkmenistan',  			0.32],
+	      ['Uzbekistan',  			0.8],
+	      ['Cambodia',  			0.04],
+	      ['China',   				0.19],
+	      ['China, Hong Kong SAR',  0.2],
+	      ['Indonesia',   			0.11],
+	      ['Laos',  				0.37],
+	      ['China, Macao SAR',  1.12],
+	      ['Malaysia',  		0.94],
+	      ['Myanmar',   		0.8],
+	      ['Philippines',   	0.04],
+	      ['Republic of Korea',   0.08],
+	      ['Singapore',   		0.33],
+	      ['Thailand', 		 0.2],
+	      ['Viet Nam',		  0.53],
+	      ['Taiwan', 		 0.2],
+	      ['Afghanistan',  		 2.92],
+	      ['Iran',  		2.27],
+	      ['Israel',		  0.63],
+	      ['Kuwait',  		0.17],
+	      ['Lebanon',   		0.2],
+	      ['Pakistan',  		2.4],
+	      ['Saudi Arabia',  	0.06],
+	      ['Syrian Arab Republic',  0.02],
+	      ['United Arab Emirates',  0.02],
+	      ['Bangladesh',  		0.4],
+	      ['Maldives',  		1.46],
+	      ['Nepal',   		0.24],
+	      ['Sri Lanka',   		0.33],
+	      ['Belarus',   		0.59],
+	      ['Moldova',   		0.12],
+	      ['Russian Federation',  1.64],
+	      ['Ukraine',   		0.91],
+	      ['Albania',   		0.45],
+	      ['Bosnia and Herzegovina',  0.3],
+	      ['Bulgaria',  		0.51],
+	      ['Croatia',   		0.36],
+	      ['Macedonia',   		0.5],
+	      ['Romania',   		0.11],
+	      ['Turkey',  			0.03],
+	      ['Serbia',  			0.28],
+	      ['Austria',   		0.53],
+	      ['Belgium',   		0.2],
+	      ['Cyprus',  			0.12],
+	      ['Czech Republic',     2.7],
+	      ['Denmark',  		  0.52],
+	      ['Estonia', 		  1.53],
+	      ['Finland', 	   	   0.6],
+	      ['France', 		  0.49],
+	      ['Germany', 		   0.4],
+	      ['Greece',		  0.29],
+	      ['Hungary', 		  0.05],
+	      ['Iceland', 		   0.4],
+	      ['Ireland',		  0.72],
+	      ['Italy', 		  0.45],
+	      ['Latvia',		  0.66],
+	      ['Liechtenstein',    0.2],
+	      ['Lithuania', 	  0.24],
+	      ['Luxembourg',	  0.59],
+	      ['Malta', 		  0.62],
+	      ['Netherlands', 	  0.13],
+	      ['Norway', 		 0.3],
+	      ['Poland', 		 0.1],
+	      ['Portugal', 		 0.29],
+	      ['Slovenia', 		 0.44],
+	      ['Slovakia', 		 0.13],
+	      ['Spain',  		 0.23],
+	      ['Sweden', 		 0.23],
+	      ['Switzerland',   	 0.1],
+	      ['England', 		    0.73],
+	      ['Wales',  		    0.73],
+	      ['Northern Ireland',  0.13],
+	      ['Scotland',		    1.71],
+	      ['Australia',  		 3.4],
+	      ['New Zealand', 		  1.1]
+    ]);
+
+        var options = {
+        	colorAxis: {colors: ['#C8B599', '#7D6A43', '#756E63']}
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="regions_div" style="width: 900px"; height="500px";></div>
 
 	</p>
 
