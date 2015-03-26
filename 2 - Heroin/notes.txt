@@ -38,6 +38,9 @@ Stuff to measure
 	# Trade routes
 	http://www.unodc.org/unodc/en/drug-trafficking/
 
+	# Consumption and Trafficking
+	http://www.unodc.org/documents/data-and-analysis/WDR2011/The_opium-heroin_market.pdf
+
 	# of Users
 	https://www.whitehouse.gov/sites/default/files/ondcp/policy-and-research/wausid_results_report.pdf
 
