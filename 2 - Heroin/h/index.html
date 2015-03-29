@@ -3,6 +3,36 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>Project 2</title>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+		<!-- BAR CHARTS -->
+
+		<script type="text/javascript">
+		    google.load("visualization", "1", {packages:["corechart"]});
+		    google.setOnLoadCallback(drawChart);
+		    function drawChart() {
+		      var data = google.visualization.arrayToDataTable([
+		        ['Race', 'White', 'Hispanic', 'Black', 'Other'],
+		        ['Heroin Users', 56, 14, 27, 3],
+		        ['General Population', 66, 15, 12, 7]
+		      ]);
+
+		      var view = new google.visualization.DataView(data);
+
+		      var options = {
+		      	hAxis: {textPosition: 'out'},
+		      	vAxis: {textPosition: 'out'},
+		      	chartArea: {left:150, width:450, 'height': '60%'},
+		        width: 500,
+		        height: 250,
+		        legend: { position: 'top', maxLines: 2 },
+		        bar: { groupWidth: '50%' },
+		        isStacked: true
+		      };
+		      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+		      chart.draw(view, options);
+			}
+		</script>
 	</head>
 
 	<body>
@@ -74,6 +104,9 @@
 	<br><br>
 	Demographics:
 	<br><br>
+	
+	<div id="barchart_values" style="width: 900px;"></div>
+
 
 	<!--- PIE CHART FOR DEMOGRAPHICS -->
 
@@ -274,7 +307,6 @@
 
 	<!-- Choropleth goes here -->
 
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["geochart"]});
       google.setOnLoadCallback(drawRegionsMap);
