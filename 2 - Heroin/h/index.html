@@ -5,34 +5,66 @@
 		<title>Project 2</title>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-		<!-- BAR CHARTS -->
+		<!-- RACE BAR CHARTS -->
 
 		<script type="text/javascript">
 		    google.load("visualization", "1", {packages:["corechart"]});
 		    google.setOnLoadCallback(drawChart);
 		    function drawChart() {
 		      var data = google.visualization.arrayToDataTable([
-		        ['Race', 'White', 'Hispanic', 'Black', 'Other'],
-		        ['Heroin Users', 56, 14, 27, 3],
-		        ['General Population', 66, 15, 12, 7]
+		        ['Race', 'White', 'Hispanic', 'Black', 'Other/Mixed'],
+		        ['Heroin Users', 78.2, 9.9, 8.9, 3.0],
+		        ['General Population', 65.0, 15.6, 11.8, 7.6]
 		      ]);
 
 		      var view = new google.visualization.DataView(data);
 
 		      var options = {
-		      	hAxis: {textPosition: 'out'},
+		      	title: 'Race Distribution',
+		      	hAxis: {textPosition: 'none'},
 		      	vAxis: {textPosition: 'out'},
-		      	chartArea: {left:150, width:450, 'height': '60%'},
+		      	chartArea: {left:120, 'height': '60%'},
 		        width: 500,
 		        height: 250,
 		        legend: { position: 'top', maxLines: 2 },
 		        bar: { groupWidth: '50%' },
 		        isStacked: true
 		      };
-		      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+		      var chart = new google.visualization.BarChart(document.getElementById("barchart_race"));
 		      chart.draw(view, options);
 			}
 		</script>
+
+		<!-- AGE BAR CHARTS -->
+
+		<script type="text/javascript">
+		    google.load("visualization", "1", {packages:["corechart"]});
+		    google.setOnLoadCallback(drawChart);
+		    function drawChart() {
+		      var data = google.visualization.arrayToDataTable([
+		        ['Age', '12-25', '26-55', '56+'],
+		        ['Heroin Users', 38.9, 57.0, 4.1],
+		        ['General Population', 22.8, 48.2, 29.0]
+		      ]);
+
+		      var view = new google.visualization.DataView(data);
+
+		      var options = {
+		      	title: 'Age Distribution',
+		      	hAxis: {textPosition: 'none'},
+		      	vAxis: {textPosition: 'out'},
+		      	chartArea: {left:120, 'height': '60%'},
+		        width: 500,
+		        height: 250,
+		        legend: { position: 'top', maxLines: 2 },
+		        bar: { groupWidth: '50%' },
+		        isStacked: true
+		      };
+		      var chart = new google.visualization.BarChart(document.getElementById("barchart_age"));
+		      chart.draw(view, options);
+			}
+		</script>
+
 	</head>
 
 	<body>
@@ -105,189 +137,11 @@
 	Demographics:
 	<br><br>
 	
-	<div id="barchart_values" style="width: 900px;"></div>
+	<div id="barchart_race" style="width: 50%;"></div>
+	<div id="barchart_age" style="width: 50%;"></div>
 
 
-	<!--- PIE CHART FOR DEMOGRAPHICS -->
-
-	<div id="pieChart"></div>
-
-	<script src="js/d3.min.js"></script>
-	<script src="js/d3pie.min.js"></script>
-	<script>
-	// Race of Users
-	var pie1 = new d3pie("pieChart", {
-		"header": {
-			"title": {
-				"text": "Race of Users",
-				"fontSize": 22,
-				"font": "verdana"
-			},
-			"subtitle": {
-				"text": "Frequency in Thousands",
-				"color": "#999999",
-				"fontSize": 10,
-				"font": "verdana"
-			},
-			"titleSubtitlePadding": 12
-		},
-		"footer": {
-			"text": "Source: SAMHSA, 2010-2011",
-			"color": "#999999",
-			"fontSize": 11,
-			"font": "open sans",
-			"location": "bottom-center"
-		},
-		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 590,
-			"pieInnerRadius": "45%",
-			"pieOuterRadius": "90%"
-		},
-		"data": {
-			"content": [
-				{
-					"label": "Hispanic",
-					"value": 37,
-					"color": "#C8B599"
-				},
-				{
-					"label": "Other, Not Hispanic",
-					"value": 8,
-					"color": "#7A5F37"
-				},
-				{
-					"label": "Black, Not Hispanic",
-					"value": 73,
-					"color": "#9B7F54"
-				},
-				{
-					"label": "White, Not Hispanic",
-					"value": 150,
-					"color": "#958977"
-				}
-			]
-		},
-		"labels": {
-			"outer": {
-				"pieDistance": 16
-			},
-			"inner": {
-				"format": "value"
-			},
-			"mainLabel": {
-				"font": "verdana",
-				"fontSize": 11
-			},
-			"percentage": {
-				"color": "#e1e1e1",
-				"font": "verdana",
-				"decimalPlaces": 0
-			},
-			"value": {
-				"color": "#e1e1e1",
-				"font": "verdana"
-			},
-			"lines": {
-				"enabled": true,
-				"color": "#cccccc"
-			}
-		},
-		"effects": {
-			"pullOutSegmentOnClick": {
-				"effect": "linear",
-				"speed": 400,
-				"size": 8
-			}
-		}
-	});
-
-	// Age of Users
-	var pie2 = new d3pie("pieChart", {
-		"header": {
-			"title": {
-				"text": "Age of Users",
-				"fontSize": 22,
-				"font": "verdana"
-			},
-			"subtitle": {
-				"text": "Frequency in Thousands",
-				"color": "#999999",
-				"fontSize": 11,
-				"font": "verdana"
-			},
-			"titleSubtitlePadding": 12
-		},
-		"footer": {
-			"text": "Source: SAMHSA, 2010-2011",
-			"color": "#999999",
-			"fontSize": 11,
-			"font": "open sans",
-			"location": "bottom-center"
-		},
-		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 590,
-			"pieInnerRadius": "45%",
-			"pieOuterRadius": "90%"
-		},
-		"data": {
-			"content": [
-				{
-					"label": "12-25",
-					"value": 111,
-					"color": "#C8B599"
-				},
-				{
-					"label": "26-65",
-					"value": 145,
-					"color": "#958977"
-				},
-				{
-					"label": "55+",
-					"value": 12,
-					"color": "#9B7F54"
-				}
-			]
-		},
-		"labels": {
-			"outer": {
-				"pieDistance": 16
-			},
-			"inner": {
-				"format": "value"
-			},
-			"mainLabel": {
-				"font": "verdana",
-				"fontSize": 11
-			},
-			"percentage": {
-				"color": "#e1e1e1",
-				"font": "verdana",
-				"decimalPlaces": 0
-			},
-			"value": {
-				"color": "#e1e1e1",
-				"font": "verdana"
-			},
-			"lines": {
-				"enabled": true,
-				"color": "#cccccc"
-			}
-		},
-		"effects": {
-			"pullOutSegmentOnClick": {
-				"effect": "linear",
-				"speed": 400,
-				"size": 8
-			}
-		}
-	});
-	</script>
-	<!--- End Pie Chart -->
-
-	<!-- <img src="pic/heroin-users-demographic.png"> -->
-	<!-- <img src="pic/heroin-users-age.png" -->
+	
 	</p>
 	<br><br>
 	<p>
