@@ -159,7 +159,7 @@
 	      .attr("x", width - 18)
 	      .attr("width", 18)
 	      .attr("height", 18)
-	      .attr("id", function(d, i) { return "legend-" + d;})
+	      .attr("class", function(d, i) { return d;})
 	      .style("fill", color);
 
 	  legend.append("text")
@@ -169,15 +169,35 @@
 	      .style("text-anchor", "end")
 	      .text(function(d) { return d; });
 
+
+	  // Mouseover listeners
 	  legend.on("mouseover", function(d, i) {
-	  	d3.select("#legend-" + d).style("fill","red");
-	  	d3.selectAll("." + d).style("fill", "red");
+	  	d3.select("." + d)
+	  		.transition()
+	  		.style("fill", "#FF9933");
+	  	d3.selectAll("." + d)
+	  		.transition()
+	  		.style("fill", "#FF9933");
 	  });
 
 	  legend.on("mouseout", function(d, i) {
-	  	d3.select("#legend-" + d).style("fill", color);
-	  	d3.selectAll("." + d).style("fill", color(d));
+	  	d3.select("." + d)
+	  		.transition()
+	  		.style("fill", color);
+	  	d3.selectAll("." + d)
+	  		.transition()
+	  		.style("fill", color(d));
 	  });
+
+	  // year.on("mouseover", function(d, i) {
+	  // 	d3.select("." + d).style("fill", "red");
+	  // 	d3.selectAll("." + d).style("fill", "red");
+	  // });
+
+	  // year.on("mouseout", function(d, i) {
+	  // 	d3.select("." + d).style("fill", color);
+	  // 	d3.selectAll("." + d).style("fill", color(d));
+	  // });
 
 	});
 
