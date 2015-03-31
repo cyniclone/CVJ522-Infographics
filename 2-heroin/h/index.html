@@ -159,7 +159,7 @@
 	      .attr("x", width - 18)
 	      .attr("width", 18)
 	      .attr("height", 18)
-	      .attr("id", function(d, i) { return "legend-" + i;})
+	      .attr("id", function(d, i) { return "legend-" + d;})
 	      .style("fill", color);
 
 	  legend.append("text")
@@ -170,11 +170,13 @@
 	      .text(function(d) { return d; });
 
 	  legend.on("mouseover", function(d, i) {
-	  	d3.select("#legend-" + i).style("fill","red");
+	  	d3.select("#legend-" + d).style("fill","red");
+	  	d3.selectAll("." + d).style("fill", "red");
 	  });
 
 	  legend.on("mouseout", function(d, i) {
-	  	d3.select("#legend-" + i).style("fill", color);
+	  	d3.select("#legend-" + d).style("fill", color);
+	  	d3.selectAll("." + d).style("fill", color(d));
 	  });
 
 	});
