@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<!-- Referenced -->
+<!-- http://fiddle.jshell.net/7KJC7/2/ -->
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Project 2</title>
+
+
+		
+
+	</head>
+
+	<body style="background-color:white;">
+
+	<!-- Dropdown -->
+	<select id="select-list">
+		<option value="2002-2003">2002-2003</option> 
+		<option value="2004-2005">2004-2005</option>
+		<option value="2006-2007">2006-2007</option>
+		<option value="2008-2009">2008-2009</option>
+		<option value="2010-2011">2010-2011</option>
+		<option selected value="2012-2013">2012-2013</option>
+		
+	</select>
+
+
+	<div id="hrace"></div>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script>
+		var alertChange = function() {
+    //get the data value and index from the event
+    var selectedValue = d3.event.target.value;
+    var selectedIndex = d3.event.target.selectedIndex;
+    
+    alert("You selected the option at index " + selectedIndex
+          + ", with value attribute "
+          + selectedValue);
+    
+    //if you need to access more complicated attributes 
+    //or data from the option element, you can use the index
+    //to select the individual element:
+    var selectedDOMElement =
+        d3.event.target.children[selectedIndex];
+    var selection = d3.select(selectedDOMElement);
+    
+    alert("The text from that option was: " + selection.text());
+    return selectedIndex;
+}
+
+
+	d3.select("#select-list").on("change", alertChange);
+
+	var margin = {top: 20, right: 100, bottom: 30, left: 40},
+	    width = 600 - margin.left - margin.right,
+	    height = 300 - margin.top - margin.bottom;
+
+	var x = d3.scale.ordinal()
+	    .rangeRoundBands([0, width], .2);
+
+	var y = d3.scale.linear()
+	    .rangeRound([height, 0]);
+
+	var color = d3.scale.ordinal()
+	    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+
+	var xAxis = d3.svg.axis()
+	    .scale(x)
+	    .orient("bottom");
+
+	var yAxis = d3.svg.axis()
+	    .scale(y)
+	    .orient("left")
+	    .ticks(4)
+	    .tickFormat(d3.format(".2s"));
+
+	var svg = d3.select("#hrace").append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	d3.csv("data/hrace.csv", function(error, data) {
+	  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "Year"; }));
+
+	  data.forEach(function(d) {
+	    var y0 = 0;
+	    d.races = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+	    d.total = d.races[d.races.length - 1].y1;
+	  });
+
+	  x.domain(data.map(function(d) { return d.Year; }));
+	  y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+	  // Draw x-axis
+	  svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis);
+
+	  // Draw y-axis
+	  svg.append("g")
+	      .attr("class", "y axis")
+	      .call(yAxis)
+	    // Draw label
+	    .append("text")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
+	      .style("text-anchor", "end")
+	      .text("Percent Distribution");
+
+	  var year = svg.selectAll(".year")
+	      .data(data)
+	    .enter().append("g")
+	      .attr("class", "g")
+	      .attr("transform", function(d) { return "translate(" + x(d.Year) + ",0)"; });
+
+	  year.selectAll("rect")
+	      .data(function(d) { return d.races; })
+	    .enter().append("rect")
+	      .attr("width", x.rangeBand())
+	      .attr("y", function(d) { return y(d.y1); })
+	      .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+	      .style("fill", function(d) { return color(d.name); });
+
+
+	  // Legend
+	  var legend = svg.selectAll(".legend")
+	      .data(color.domain().slice().reverse())
+	    .enter().append("g")
+	      .attr("class", "legend")
+	      .attr("transform", function(d, i) { return "translate(80," + i * 20 + ")"; });
+
+	  legend.append("rect")
+	      .attr("x", width - 18)
+	      .attr("width", 18)
+	      .attr("height", 18)
+	      .style("fill", color);
+
+	  legend.append("text")
+	      .attr("x", width - 24)
+	      .attr("y", 9)
+	      .attr("dy", ".35em")
+	      .style("text-anchor", "end")
+	      .text(function(d) { return d; });
+
+	});
+
+	</script>
+
+	
+	</body>
+
+<html>

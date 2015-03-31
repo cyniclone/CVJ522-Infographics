@@ -5,36 +5,6 @@
 		<title>Project 2</title>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-		<!-- RACE BAR CHARTS -->
-
-		<script type="text/javascript">
-		    google.load("visualization", "1", {packages:["corechart"]});
-		    google.setOnLoadCallback(drawChart);
-		    function drawChart() {
-		      var data = google.visualization.arrayToDataTable([
-		        ['Race', 'White', 'Hispanic', 'Black', 'Other/Mixed'],
-		        ['Heroin Users', 78.2, 9.9, 8.9, 3.0],
-		        ['General Population', 65.0, 15.6, 11.8, 7.6]
-		      ]);
-
-		      var view = new google.visualization.DataView(data);
-
-		      var options = {
-		      	title: 'Race Distribution',
-		      	hAxis: {textPosition: 'none'},
-		      	vAxis: {textPosition: 'out'},
-		      	chartArea: {left:120, 'height': '60%'},
-		        width: 500,
-		        height: 250,
-		        legend: { position: 'top', maxLines: 2 },
-		        bar: { groupWidth: '50%' },
-		        isStacked: true
-		      };
-		      var chart = new google.visualization.BarChart(document.getElementById("barchart_race"));
-		      chart.draw(view, options);
-			}
-		</script>
-
 		<!-- AGE BAR CHARTS -->
 
 		<script type="text/javascript">
@@ -60,6 +30,7 @@
 		        bar: { groupWidth: '50%' },
 		        isStacked: true
 		      };
+
 		      var chart = new google.visualization.BarChart(document.getElementById("barchart_age"));
 		      chart.draw(view, options);
 			}
@@ -137,10 +108,12 @@
 	Demographics:
 	<br><br>
 	
+	<h2>Race Distribution</h2>
 	<div id="hrace"></div>
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<script>
 
+	// Set up margins and axes
 	var margin = {top: 20, right: 100, bottom: 30, left: 40},
 	    width = 600 - margin.left - margin.right,
 	    height = 300 - margin.top - margin.bottom;
@@ -164,7 +137,8 @@
 	    .ticks(4)
 	    .tickFormat(d3.format(".2s"));
 
-	var svg = d3.select("#hrace").append("svg")
+	// Build container from div
+	var svg1 = d3.select("#hrace").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	  .append("g")
@@ -175,19 +149,19 @@
 
 	  data.forEach(function(d) {
 	    var y0 = 0;
-	    d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
-	    d.total = d.ages[d.ages.length - 1].y1;
+	    d.races = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+	    d.total = d.races[d.races.length - 1].y1;
 	  });
 
 	  x.domain(data.map(function(d) { return d.Year; }));
 	  y.domain([0, d3.max(data, function(d) { return d.total; })]);
 
-	  svg.append("g")
+	  svg1.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
 	      .call(xAxis);
 
-	  svg.append("g")
+	  svg1.append("g")
 	      .attr("class", "y axis")
 	      .call(yAxis)
 	    .append("text")
@@ -197,35 +171,34 @@
 	      .style("text-anchor", "end")
 	      .text("Percent Distribution");
 
-	  var year = svg.selectAll(".year")
+	  var year1 = svg1.selectAll(".year")
 	      .data(data)
 	    .enter().append("g")
 	      .attr("class", "g")
 	      .attr("transform", function(d) { return "translate(" + x(d.Year) + ",0)"; });
 
-	  year.selectAll("rect")
-	      .data(function(d) { return d.ages; })
+	  year1.selectAll("rect")
+	      .data(function(d) { return d.races; })
 	    .enter().append("rect")
 	      .attr("width", x.rangeBand())
 	      .attr("y", function(d) { return y(d.y1); })
 	      .attr("height", function(d) { return y(d.y0) - y(d.y1); })
 	      .style("fill", function(d) { return color(d.name); });
 
-
 	  // Legend
-	  var legend = svg.selectAll(".legend")
+	  var legend1 = svg1.selectAll(".legend")
 	      .data(color.domain().slice().reverse())
 	    .enter().append("g")
 	      .attr("class", "legend")
 	      .attr("transform", function(d, i) { return "translate(80," + i * 20 + ")"; });
 
-	  legend.append("rect")
+	  legend1.append("rect")
 	      .attr("x", width - 18)
 	      .attr("width", 18)
 	      .attr("height", 18)
 	      .style("fill", color);
 
-	  legend.append("text")
+	  legend1.append("text")
 	      .attr("x", width - 24)
 	      .attr("y", 9)
 	      .attr("dy", ".35em")
@@ -233,10 +206,22 @@
 	      .text(function(d) { return d; });
 
 	});
-
 	</script>
 
-	<div id="barchart_race" style="width: 50%;"></div>
+	<h2>Age Distribution</h2>
+	<div id="hage"></div>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script>
+	// Build container from div
+	var svgAge = d3.select("#hage").append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	
+	</script>
+
 	<div id="barchart_age" style="width: 50%;"></div>
 
 
@@ -256,7 +241,6 @@
 	<br><br>
 	<h3>Prevalence of Opiate (Heroin and Opium-Derived) Use (Ages 12-70):</h3>
 	<br><br>
-	<!-- <img src="pic/opioid-prevalence.png"> -->
 
 	<!-- Choropleth goes here -->
 
