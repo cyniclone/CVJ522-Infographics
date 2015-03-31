@@ -142,6 +142,7 @@
 	  year.selectAll("rect")
 	      .data(function(d) { return d.races; })
 	    .enter().append("rect")
+	      .attr("class", function(d) { return d.name;})
 	      .attr("width", x.rangeBand())
 	      .attr("y", function(d) { return y(d.y1); })
 	      .attr("height", function(d) { return y(d.y0) - y(d.y1); })
