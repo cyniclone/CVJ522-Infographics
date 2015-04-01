@@ -28,7 +28,9 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>" + d.name + "</strong> <span style='color:red'>" + d.races + "</span>";
+    return "<strong>" + d.name 
+    + "</strong> <span style='color:orange'>" 
+    + d.value + "%</span>";
   });
 
 
@@ -48,7 +50,6 @@ d3.csv("data/hrace.csv", function(error, data) {
   data.forEach(function(d) {
     var y0 = 0;
     d.races = color.domain().map(function(name) { 
-    	// console.log(d[name]);
     	return {
     		name: name, 
     		y0: y0, 
@@ -93,17 +94,13 @@ d3.csv("data/hrace.csv", function(error, data) {
       .attr("height", function(d) { return y(d.y0) - y(d.y1); })
       .style("fill", function(d) { return color(d.name); })
 	  //Tooltip 
-	  // .on('mouseover', tip.show)
-	  .on('mouseover', function(d) {
-	  	console.log(d.value);
-	  })
+	  .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
 
   // Legend
   var legend = svg.selectAll(".legend")
       .data(color.domain().slice().reverse())
     .enter().append("g")
-      // .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(80," + i * 20 + ")"; });
 
   legend.append("rect")
