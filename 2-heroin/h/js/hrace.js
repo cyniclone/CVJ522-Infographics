@@ -1,6 +1,6 @@
 // Set up margins
-var margin = {top: 20, right: 100, bottom: 30, left: 40},
-    width = 600 - margin.left - margin.right,
+var margin = {top: 20, right: 200, bottom: 30, left: 40},
+    width = 800 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 // Set up axes and color scale
@@ -29,7 +29,7 @@ var tip = d3.tip()
   .offset([-10, 0])
   .html(function(d) {
     return "<strong>" + d.name 
-    + "</strong> <span style='color:orange'>" 
+    + ":  </strong><span style='color:orange'> " 
     + d.value + "%</span>";
   });
 
@@ -52,7 +52,7 @@ d3.csv("data/hrace.csv", function(error, data) {
     d.races = color.domain().map(function(name) { 
     	return {
     		name: name, 
-    		y0: y0, 
+    		y0: y0,
     		y1: y0 += +d[name],
     		value: d[name]
     	}; 
@@ -85,8 +85,7 @@ d3.csv("data/hrace.csv", function(error, data) {
       .attr("transform", function(d) { return "translate(" + x(d.Year) + ",0)"; });
 
   year.selectAll("rect")
-      .data(function(d) { 
-      	return d.races; })
+      .data(function(d) { return d.races; })
     .enter().append("rect")
       .attr("class", function(d) { return d.name; })
       .attr("width", x.rangeBand())
@@ -96,6 +95,37 @@ d3.csv("data/hrace.csv", function(error, data) {
 	  //Tooltip 
 	  .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
+
+  /* For comparison bar
+	1. Make a <g>, append it to svg and move it to the right
+	2. Make a <rects> for data and append them to the <g>
+	3. Add mouseovers and colors to rects
+
+	var compData = {
+    		name: name, 
+
+    		y1: y0 += +d[name],
+    		value: d[name]
+    	}; 
+
+	var comp = svg.select(".comp")
+		.data my data
+	  .enter().append("g")
+	    .attr("class", "g")
+	    .attr("transform" translate right)
+
+	comp.selectAll("rect")
+		.data ( my data)
+	  .enter().append("rect")
+	    .attr("class" class name)
+	    .attr("width", x.rangeBand())
+	    .attr("y" )
+	    .attr("height", )
+	    .style("fill", color thing)
+
+
+
+  */
 
   // Legend
   var legend = svg.selectAll(".legend")
@@ -120,19 +150,12 @@ d3.csv("data/hrace.csv", function(error, data) {
 
   // Mouseover listeners
   legend.on("mouseover", function(d) {
-  	console.log(d);
-  	d3.select("." + d)
-  		.transition()
-  		.style("fill", "#FF9933");
   	d3.selectAll("." + d)
   		.transition()
   		.style("fill", "#FF9933");
   });
 
   legend.on("mouseout", function(d) {
-  	d3.select("." + d)
-  		.transition()
-  		.style("fill", color);
   	d3.selectAll("." + d)
   		.transition()
   		.style("fill", color(d));
