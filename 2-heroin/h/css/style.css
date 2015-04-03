@@ -1,34 +1,39 @@
-/*#jumbo {
-	margin: 25px 25px 25px 25px;
-	padding: 25px 25px 25px 25px;
-	background-color: #e6dbd2;
-	font-size: 16pt;
+/* For Sticky Header */
 
-	border: 1px solid;
-    border-radius: 20px;
-}*/
+header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    line-height: 108px;
+    height: 95px;
+    background: #6b486b;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
 
-/*div {
-	margin: 20px 20px 20px 20px;
-	padding: 20px 20px 20px 20px;
+    border-color:#7F7F7F;
+    border-width: 2px;
+    border-bottom-style: solid;
+    
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
 
-    border: 0px solid;
-    border-color: #333; 
-    border-radius: 20px;
-}*/
-
-.header {
-	background-color: #e6dbd2;
-	border-radius: 20px;
-	margin: 20px 20px 20px 20px;
-	padding: 20px 20px 20px 20px;
+header.sticky {
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px; 
+    background: #98abc5;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .story {
 	background-color: #FFF;
 	border-radius: 20px;
-	margin: 20px 20px 20px 20px;
-	padding: 20px 20px 20px 20px;
+  margin: 0px 20px 0px 20px;
+	padding: 108px 20px 20px 20px;
 }
 
 /* D3 Formatting */
@@ -98,6 +103,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11pt;
 	background-color:#7F7F7F;
+  margin:0;
 }
 
 h2, h3, h4 {
@@ -113,10 +119,10 @@ hr {
 	color: #BFBFBF;
 }
 
-img {
+/*img {
 	margin-top: 20px;
 	margin-right: 20px;
-}
+}*/
 
 p {
 	line-height: 120%;
