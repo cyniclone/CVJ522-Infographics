@@ -4,7 +4,7 @@ google.load("visualization", "1", {packages:["geochart"]});
   function drawRegionsMap() {
 
     var data = google.visualization.arrayToDataTable([
-     	['Country', 'Prevalence'],
+     	['Country', '% Prevalence'],
         ['Kenya', 0.22],
 		['Mauritius', 0.91],
 		['Rwanda', 0.14],

@@ -25,6 +25,9 @@ R-DAS Codebook:
 	http://www.icpsr.umich.edu/SDA/SAMHDA/34482-0001/CODEBOOK/hcbk.htm
 
 
+DATA CONVERTER
+	# Convert to JSON data from EXCEL
+	http://shancarter.github.io/mr-data-converter/
 
 Stuff to measure
 	# UNODC data site
@@ -49,5 +52,8 @@ Stuff to measure
 	https://www.whitehouse.gov/sites/default/files/ondcp/policy-and-research/ndcs_data_supplement_2014.pdf
 
 	# Heroin Overdoses - Look for spreadsheet
+	# MY JS FIDDLE
+	https://jsfiddle.net/j2hbm2x1/1/
+
 	# Source: National Center on Health Statistics, CDC WONDER
 	http://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates

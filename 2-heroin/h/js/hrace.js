@@ -122,9 +122,6 @@ d3.csv("data/hrace.csv", function(error, data) {
 	    .attr("y" )
 	    .attr("height", )
 	    .style("fill", color thing)
-
-
-
   */
 
   // Legend
