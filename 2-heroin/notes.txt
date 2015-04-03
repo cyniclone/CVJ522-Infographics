@@ -36,8 +36,6 @@ Stuff to measure
 	% use by country
 	http://www.unodc.org/documents/data-and-analysis/WDR2011/StatAnnex-consumption.pdf
 
-	# of deaths/overdose
-
 	# Trade routes
 	http://www.unodc.org/unodc/en/drug-trafficking/
 
@@ -52,8 +50,9 @@ Stuff to measure
 	https://www.whitehouse.gov/sites/default/files/ondcp/policy-and-research/ndcs_data_supplement_2014.pdf
 
 	# Heroin Overdoses - Look for spreadsheet
-	# MY JS FIDDLE
-	https://jsfiddle.net/j2hbm2x1/1/
-
 	# Source: National Center on Health Statistics, CDC WONDER
 	http://www.drugabuse.gov/related-topics/trends-statistics/overdose-death-rates
+	
+	# MY JS FIDDLE
+	https://jsfiddle.net/j2hbm2x1/1/
+	

@@ -96,34 +96,6 @@ d3.csv("data/hrace.csv", function(error, data) {
 	  .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
 
-  /* For comparison bar
-	1. Make a <g>, append it to svg and move it to the right
-	2. Make a <rects> for data and append them to the <g>
-	3. Add mouseovers and colors to rects
-
-	var compData = {
-    		name: name, 
-
-    		y1: y0 += +d[name],
-    		value: d[name]
-    	}; 
-
-	var comp = svg.select(".comp")
-		.data my data
-	  .enter().append("g")
-	    .attr("class", "g")
-	    .attr("transform" translate right)
-
-	comp.selectAll("rect")
-		.data ( my data)
-	  .enter().append("rect")
-	    .attr("class" class name)
-	    .attr("width", x.rangeBand())
-	    .attr("y" )
-	    .attr("height", )
-	    .style("fill", color thing)
-  */
-
   // Legend
   var legend = svg.selectAll(".legend")
       .data(color.domain().slice().reverse())

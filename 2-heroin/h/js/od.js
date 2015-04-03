@@ -8,9 +8,9 @@ $(function () {
             title: {
                 text: 'Yearly Heroin Overdoses by Gender'
             },
-            subtitle: {
-                text: 'Source: www.cdc.gov'
-            },
+            // subtitle: {
+            //     text: 'Source: www.cdc.gov'
+            // },
             xAxis: [{
                 categories: categories,
                 reversed: false,
