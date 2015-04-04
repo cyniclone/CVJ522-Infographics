@@ -4,13 +4,16 @@ header{
     z-index: 100;
     position: fixed;
     width: 100%;
+    
     text-align: center;
-    font-size: 60px;
+    font-family: Oswald;
+    font-size: 64px;
     line-height: 108px;
-    height: 95px;
+    height: 108px;
+    
     background: #434348;
     color: #fff;
-    font-family: 'PT Sans', sans-serif;
+    /*font-family: 'PT Sans', sans-serif;*/
     
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -111,7 +114,8 @@ a:hover {
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: ff-tisa-web-pro, Georgia, Times, 'Times New Roman', serif;
 	font-size: 11pt;
 	background-color:#7F7F7F;
   margin:0;
