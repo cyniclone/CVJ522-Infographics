@@ -114,7 +114,7 @@ google.load("visualization", "1", {packages:["geochart"]});
 
     var options = {
     	colorAxis: {
-    		colors: ['#C8B599', '#7D6A43', '#756E63'],
+    		colors: ["#e0ecf4", "#7b6888", "#6b486b"],
     		values: [0, 0.5, 2.65]
     	},
     	projection: 'kavrayskiy-vii',

@@ -8,13 +8,9 @@ header{
     font-size: 60px;
     line-height: 108px;
     height: 95px;
-    background: #6b486b;
+    background: #434348;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
-
-    border-color:#7F7F7F;
-    border-width: 2px;
-    border-bottom-style: solid;
     
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -24,7 +20,7 @@ header.sticky {
     font-size: 24px;
     line-height: 48px;
     height: 48px; 
-    background: #98abc5;
+
     text-align: left;
     padding-left: 20px;
 }
@@ -32,8 +28,12 @@ header.sticky {
 .story {
 	background-color: #FFF;
 	border-radius: 20px;
-  margin: 0px 20px 0px 20px;
-	padding: 108px 20px 20px 20px;
+  
+	padding: 120px 20px 20px 20px;
+  max-width: 1200px;
+
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /* D3 Formatting */
@@ -119,10 +119,6 @@ hr {
 	color: #BFBFBF;
 }
 
-/*img {
-	margin-top: 20px;
-	margin-right: 20px;
-}*/
 
 p {
 	line-height: 120%;
