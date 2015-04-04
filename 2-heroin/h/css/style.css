@@ -99,6 +99,15 @@ header.sticky {
 
 /* End HighCharts Formatting*/
 
+a {
+  text-decoration: none;
+  color:#000;
+}
+
+a:hover {
+  color:orange;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11pt;
@@ -115,7 +124,10 @@ hr {
 	color: #BFBFBF;
 }
 
-
 p {
 	line-height: 120%;
+}
+
+ul {
+  list-style-type: square;
 }
