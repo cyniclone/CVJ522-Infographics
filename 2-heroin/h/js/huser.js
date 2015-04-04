@@ -23,9 +23,10 @@ var utip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-  	return "<span style='color:orange'>"
+  	return "<strong>" + d.name + " users: </strong>" + 
+    "<span style='color:#434348'>"
   	+ d.value + " </span>"
-  	+ d.name + " users"
+  	
 
 
     // return "<strong>" + d.name 

@@ -29,7 +29,7 @@ var tip = d3.tip()
   .offset([-10, 0])
   .html(function(d) {
     return "<strong>" + d.name 
-    + ":  </strong><span style='color:orange'> " 
+    + ":  </strong><span style='color:#434348'> " 
     + d.value + "%</span>";
   });
 
