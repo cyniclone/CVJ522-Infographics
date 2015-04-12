@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='9.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 9000.15.0318.1720                                -->
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (ghg_mole_fraction)' inline='true' name='excel-direct.42106.555948900500' version='9.0'>
+      <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='/Users/Nicolas/Desktop/git/Infographics/3-climate-change/data/ghg_mole_fraction.xlsx' password='' server='' validate='no'>
+        <relation name='Sheet1$' table='[Sheet1$]' type='table'>
+          <columns header='yes' lost='0' outcome='1' processed='128'>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='real' name='co2 global mean(ppm)' ordinal='1' />
+            <column datatype='real' name='n2o global mean(ppb)' ordinal='2' />
+            <column datatype='real' name='ch4 global mean(ppb)' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2 global mean(ppm)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2 global mean(ppm)]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>co2 global mean(ppm)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n2o global mean(ppb)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n2o global mean(ppb)]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>n2o global mean(ppb)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ch4 global mean(ppb)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ch4 global mean(ppb)]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>ch4 global mean(ppb)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>128</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='YEAR' datatype='date' name='[Calculation_8720412132938526]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(&quot;1-1-&quot; + [year])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Ch4 Global Mean(Ppb)' datatype='real' name='[ch4 global mean(ppb)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Co2 Global Mean(Ppm)' datatype='real' name='[co2 global mean(ppm)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='N2O Global Mean(Ppb)' datatype='real' name='[n2o global mean(ppb)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ch4 global mean(ppb)]' derivation='Sum' name='[sum:ch4 global mean(ppb):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[co2 global mean(ppm)]' derivation='Sum' name='[sum:co2 global mean(ppm):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[n2o global mean(ppb)]' derivation='Sum' name='[sum:n2o global mean(ppb):qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[excel-direct.42106.555948900500].[sum:ch4 global mean(ppb):qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[excel-direct.42106.555948900500].[sum:co2 global mean(ppm):qk]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[excel-direct.42106.555948900500]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[excel-direct.42106.555948900500].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[excel-direct.42106.555948900500].[sum:n2o global mean(ppb):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ghg_mole_fraction)' name='excel-direct.42106.555948900500' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42106.555948900500'>
+            <column caption='YEAR' datatype='date' name='[Calculation_8720412132938526]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(&quot;1-1-&quot; + [year])' />
+            </column>
+            <column caption='Ch4 Global Mean(Ppb)' datatype='real' name='[ch4 global mean(ppb)]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Co2 Global Mean(Ppm)' datatype='real' name='[co2 global mean(ppm)]' role='measure' type='quantitative'>
+            </column>
+            <column caption='N2O Global Mean(Ppb)' datatype='real' name='[n2o global mean(ppb)]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[ch4 global mean(ppb)]' derivation='Sum' name='[sum:ch4 global mean(ppb):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2 global mean(ppm)]' derivation='Sum' name='[sum:co2 global mean(ppm):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[n2o global mean(ppb)]' derivation='Sum' name='[sum:n2o global mean(ppb):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8720412132938526]' derivation='Year' name='[yr:Calculation_8720412132938526:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[excel-direct.42106.555948900500].[sum:ch4 global mean(ppb):qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[excel-direct.42106.555948900500].[sum:ch4 global mean(ppb):qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[excel-direct.42106.555948900500].[sum:ch4 global mean(ppb):qk]' field-type='quantitative' max='1942.5599999999999' min='1600.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='subtitle' class='0' field='[excel-direct.42106.555948900500].[sum:co2 global mean(ppm):qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[excel-direct.42106.555948900500].[sum:co2 global mean(ppm):qk]' scope='rows' value='true' />
+            <format attr='subtitle' class='0' field='[excel-direct.42106.555948900500].[sum:n2o global mean(ppb):qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[excel-direct.42106.555948900500].[sum:n2o global mean(ppb):qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[excel-direct.42106.555948900500].[sum:co2 global mean(ppm):qk]' field-type='quantitative' max='421.74000000000001' min='340.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[excel-direct.42106.555948900500].[sum:n2o global mean(ppb):qk]' field-type='quantitative' max='330.0' min='300.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[excel-direct.42106.555948900500].[yr:Calculation_8720412132938526:ok]' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[excel-direct.42106.555948900500].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' y-axis-name='[excel-direct.42106.555948900500].[sum:ch4 global mean(ppb):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[excel-direct.42106.555948900500].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' y-axis-name='[excel-direct.42106.555948900500].[sum:co2 global mean(ppm):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[excel-direct.42106.555948900500].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' y-axis-name='[excel-direct.42106.555948900500].[sum:n2o global mean(ppb):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[excel-direct.42106.555948900500].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([excel-direct.42106.555948900500].[sum:ch4 global mean(ppb):qk] + ([excel-direct.42106.555948900500].[sum:co2 global mean(ppm):qk] + [excel-direct.42106.555948900500].[sum:n2o global mean(ppb):qk]))</rows>
+        <cols>[excel-direct.42106.555948900500].[yr:Calculation_8720412132938526:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='1' param='[excel-direct.42106.555948900500].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42106.555948900500].[:Measure Names]</field>
+          <field>[excel-direct.42106.555948900500].[none:ch4 global mean(ppb):ok]</field>
+          <field>[excel-direct.42106.555948900500].[none:year:nk]</field>
+          <field>[excel-direct.42106.555948900500].[yr:Calculation_4610412132825085:ok]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
