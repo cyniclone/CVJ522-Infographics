@@ -2,8 +2,8 @@
 //http://bl.ocks.org/mbostock/6619561
 
 function init() {
-    var width = 960,
-        height = 720,
+    var width = 800,
+        height = 600,
         speed = 1e-2,
         start = Date.now();
 
@@ -17,7 +17,7 @@ function init() {
 
     var graticule = d3.geo.graticule();
 
-    var canvas = d3.select("body").append("canvas")
+    var canvas = d3.select("#globe").append("canvas")
         .attr("width", width)
         .attr("height", height);
 
