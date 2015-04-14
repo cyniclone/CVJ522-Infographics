@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5 {
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
     color: #135267;
+    font-size: 48px;
 }
 
 #title {
@@ -40,6 +41,11 @@ body {
     background-color: #F6F8FA;
     font-family: 'PT Serif', serif;
     padding-top: 50px;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
 }
 
 #content {
