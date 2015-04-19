@@ -11,6 +11,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+
+
+    <!-- Google Choropleth -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
     <!-- Scripting -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -48,16 +57,37 @@
 <div class="container" id="content" role="main">
 
     <div class="jumbotron" id="title">
-        <h1>Climate Change</h1>
+        <h1>Global Warming</h1>
         <p class="lead">Infographics and Data Visualization
         </p>
     </div>
+
     <div class="page-header">
-        <h2>Causes of Global Warming</h2>
+        <h2>Areas Most Threatened by Sea Level Rise</h2>
     </div>
     <div>
         <p>
-            Explain mechanics of global warming and climate change. Drivers of climate change and greenhouse gas effect will be explained.
+            The 20 cities where the relative risk is larger in 2005, that is, where the ratio of AAL with respect to local GDP is the largest.
+        </p>
+        <img src="img/sealevel.png"> <br/>
+    </div>
+
+    <div class="page-header">
+        <h2>Drivers of Climate Change</h2>
+    </div>
+    <div>
+        <h3>Radiative Forcing</h3>
+        <p>
+            Radiative Forcing (RF) is the measure of change in atmospheric energy due to greenhouse gas emissions.
+            Positive RF leads to surface warming, while negative RF leads to surface cooling.
+            The increase in carbon dioxide concentration since 1750 is the largest contributor to total RF.
+            The growth in CO2 concentration is due primarily to fossil fuel consumption and a change in land use.
+        </p>
+        <h5>CO2 Emissions by Country (in thousands of tonnes)</h5>
+
+        <script src="js/co2.js"></script>
+        <div id="co2" style="width: 100%"; height="500px";></div>
+
         <ul>
             <li>Fossil Fuel Consumption</li>
             <a href="img/co2-emission-by-country.JPG">
@@ -70,7 +100,7 @@
                 <img src="img/ghg-by-source-sector.JPG" style="width:80%;">
             </a>
         </ul>
-        </p>
+
     </div>
 
 
@@ -99,15 +129,6 @@
     </div>
 
     <div class="page-header">
-        <h2>Areas Most Threatened by Sea Level Rise</h2>
-    </div>
-    <div>
-        <p>
-            The 20 cities where the relative risk is larger in 2005, that is, where the ratio of AAL with respect to local GDP is the largest.
-        </p>
-        <img src="img/sealevel.png"> <br/>
-
-    <div class="page-header">
         <h2>Global Glacier Changes</h2>
     </div>
     <div>
@@ -120,7 +141,7 @@
             The number of advancing (blue) and retreating (red) glaciers are plotted as stacked columns in the corresponding survey year.
         </p>
     </div>
-    </div>
+
 
     <!-- Globe goes here -->
     <div id="globe" style="padding-top: 20px;">
