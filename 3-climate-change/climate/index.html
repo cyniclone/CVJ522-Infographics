@@ -45,13 +45,14 @@
             </button>
             <a class="navbar-brand" href="#">CVJ522</a>
         </div>
+        <!---
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div> --> <!--/.nav-collapse -->
     </div>
 </nav>
 
@@ -69,7 +70,11 @@
     </div>
     <div>
         <p>
-            The 20 cities where the relative risk is larger in 2005, that is, where the ratio of AAL with respect to local GDP is the largest.
+            The 20 cities where the relative risk is larger in 2005, that is, where the ratio of
+
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Average Annual Losses">AAL</a>
+
+            with respect to local GDP is the largest.
         </p>
         <img src="img/sealevel.png"> <br/>
         <hr>
@@ -167,10 +172,10 @@
 
     <p>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <img src="img/ice1.png"> <br/>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <p>
                 Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
                 Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
@@ -183,10 +188,10 @@
 
     <p>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-8">
             <img src="img/ice2.png"> <br/>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
             <p>
                 Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
                 Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
@@ -238,6 +243,15 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!--Initialize tooltips -->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 </body>
