@@ -167,7 +167,7 @@ function drawRegionsMap2() {
     var options = {
         colorAxis: {
             colors: ["#C2E7CE", "#308780", "#135267"],
-            values: [0, 6, 12.03]
+            values: [0, 6, 12]
         },
         projection: 'kavrayskiy-vii'
     };

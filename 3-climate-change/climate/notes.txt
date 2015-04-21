@@ -1,0 +1,19 @@
+Questions:
+
+Best way to show most threatened areas?
+ - With map or chart? (Dot plot / lollipop chart)
+    + Bubble chart with cities?
+ - Which metric:
+    + Population
+    + AAL
+    + % of city GDP
+
+Ideas:
+
+Dual-axis chart
+    - x-axis encodes YEAR
+    - y-axis1 encodes temperature change
+    - y-axis2 encodes sea level rise
+
+
+
