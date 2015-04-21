@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43479ae-6fd4-45b4-9668-6df37a4ee436" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notes.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../data/~$CO2_emissions_2012.xlsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/greenhouse.png" afterPath="$PROJECT_DIR$/img/greenhouse-prototype.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/ice1.jpg" afterPath="$PROJECT_DIR$/img/ice1-prototype.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/ice2.jpg" afterPath="$PROJECT_DIR$/img/ice2-prototype.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/ice3.jpg" afterPath="$PROJECT_DIR$/img/ice3-prototype.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/ice4.png" afterPath="$PROJECT_DIR$/img/ice4-prototype.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../data/CO2_emissions_2012.xlsx" afterPath="$PROJECT_DIR$/../data/CO2_emissions_2012.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/co2.js" afterPath="$PROJECT_DIR$/js/co2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,10 +28,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26900584">
-              <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.38128656">
+              <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +101,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -174,6 +164,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,11 +262,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,7 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29590642">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -448,27 +447,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38128656">
           <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-          <folding>
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429412475000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26900584">
-          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.38128656">
+          <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
