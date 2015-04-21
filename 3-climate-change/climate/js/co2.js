@@ -1,3 +1,7 @@
+//On-Click functions
+
+
+
 google.load("visualization", "1", {packages:["geochart"]});
 google.setOnLoadCallback(drawRegionsMap);
 google.setOnLoadCallback(drawRegionsMap2);

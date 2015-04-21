@@ -14,8 +14,8 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
-
 
     <!-- Google Choropleth -->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -32,6 +32,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body role="document">
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -87,16 +88,31 @@
         The increase in carbon dioxide concentration since 1750 is the largest contributor to total RF.
         The growth in CO<sub>2</sub> concentration is due primarily to fossil fuel consumption and a change in land use.
     </p>
-    <h4>CO<sub>2</sub> Emissions by Country (in thousands of tonnes)</h4>
 
-    <script src="js/co2.js"></script>
-    <div id="co2" style="width: 100%"; height="500px";></div>
+
+    <div role="tabpanel">
+
+        <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#co2" aria-controls="co2" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions by Country (in thousands of tonnes)</h4></a></li>
+                <li role="presentation"><a href="#co2pc" aria-controls="co2pc" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions Per Capita</h4></a></li>
+            </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <script src="js/co2.js"></script>
+            <div role="tabpanel" class="tab-pane active fade in" id="co2"></div>
+            <div role="tabpanel" class="tab-pane fade in" id="co2pc"></div>
+        </div>
+
+    </div>
+
+
 
     <hr>
 
     <h4>Tonnes of CO<sub>2</sub> Per Capita</h4>
-    <script src="js/co2.js"></script>
-    <div id="co2pc" style="width: 100%"; height="500px";></div>
+
 
     <hr>
 
