@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2 {
-    font-family: "PT Sans Narrow";
+    font-family: 'PT Sans Narrow', sans-serif;
     text-transform: uppercase;
     color: #135267;
     font-size: 48px;
@@ -41,6 +41,11 @@ h3 {
 h4 {
     font-family: "Oswald";
     font-size: 16px;
+}
+
+.chart-title {
+    font-family: 'PT Sans', sans-serif;
+    padding: 20px;
 }
 
 #title {
