@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43479ae-6fd4-45b4-9668-6df37a4ee436" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,20 +21,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="site" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5964912">
-              <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,10 +56,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="23" />
-    <option name="width" value="1436" />
-    <option name="height" value="877" />
+    <option name="x" value="10" />
+    <option name="y" value="29" />
+    <option name="width" value="1420" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -98,8 +84,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -134,6 +118,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,10 +178,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="10" y="29" width="1420" height="827" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16643454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19289693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -234,6 +220,22 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
           <folding />
         </state>
@@ -243,7 +245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -423,18 +424,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08070175">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{&quot;projection&quot;: 'kavrayskiy-vii'...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{&quot;groupingSymbol&quot;: ','...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{&quot;projection&quot;: 'kavrayskiy-vii'...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642584000" expanded="true" signature="-1:-1" placeholder="{&quot;groupingSymbol&quot;: ','...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -442,27 +432,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5695906">
           <caret line="80" column="130" selection-start-line="80" selection-start-column="130" selection-end-line="80" selection-end-column="130" />
-          <folding>
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429642964000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5964912">
-          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.54269004">
+          <caret line="246" column="27" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
           <folding />
         </state>
       </provider>
