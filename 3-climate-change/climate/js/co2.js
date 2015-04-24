@@ -93,7 +93,7 @@ function drawRegionsMap() {
         fractionDigits:0});
     formatter.format(data, 1);
 
-    var chart = new google.visualization.GeoChart(document.getElementById('co2'));
+    var chart = new google.visualization.GeoChart(document.getElementById('chart-co2'));
 
     chart.draw(data, options);
 }
@@ -181,7 +181,7 @@ function drawRegionsMap2() {
             fractionDigits:2});
     formatter.format(data, 1);
 
-    var chart = new google.visualization.GeoChart(document.getElementById('co2pc'));
+    var chart = new google.visualization.GeoChart(document.getElementById('chart-co2pc'));
 
     chart.draw(data, options);
 }

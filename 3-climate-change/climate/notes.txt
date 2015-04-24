@@ -17,5 +17,7 @@ Dual-axis chart
     - y-axis1 encodes temperature change
     - y-axis2 encodes sea level rise
 
+Chart fonts:
 
+Gill sans MT
 

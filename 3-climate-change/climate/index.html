@@ -109,7 +109,6 @@
                 <img src="img/aal-02.png">
             </div>
         </div>
-
     </div>
 
     <div class="page-header">
@@ -124,30 +123,102 @@
         The growth in CO<sub>2</sub> concentration is due primarily to fossil fuel consumption and a change in land use.
     </p>
 
-
     <div role="tabpanel">
 
         <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#co2" aria-controls="co2" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions by Country (in thousands of tonnes)</h4></a></li>
+                <li role="presentation" class="active"><a href="#co2" aria-controls="co2" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions by Country (thousands of tonnes)</h4></a></li>
                 <li role="presentation"><a href="#co2pc" aria-controls="co2pc" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions Per Capita</h4></a></li>
             </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
             <script src="js/co2.js"></script>
-            <div role="tabpanel" class="tab-pane active fade in" id="co2"></div>
-            <div role="tabpanel" class="tab-pane fade in" id="co2pc"></div>
+            <div role="tabpanel" class="tab-pane active fade in" id="co2">
+                <div id="chart-co2"></div>
+                <hr>
+                <h4>Top Five Offenders</h4>
+                <table class="table table-condensed table-co2">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Country</th>
+                        <th>CO<sub>2</sub> Emissions - Thousands of Tonnes</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>China</td>
+                        <td>2,625,730</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>US</td>
+                        <td> 1,396,791 </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>India</td>
+                        <td> 611,226 </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Russia</td>
+                        <td> 491,840 </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Japan</td>
+                        <td> 342,270 </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="co2pc">
+                <div id="chart-co2pc"></div>
+                <hr>
+                <h4>Top Five Offenders</h4>
+                <table class="table table-condensed table-co2">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Country</th>
+                        <th>CO<sub>2</sub> Emissions - Tonnes per Capita</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Qatar</td>
+                        <td> 12.03 </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trinidad & Tobago</td>
+                        <td>  9.60  </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kuwait</td>
+                        <td>  8.11  </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>United Arab Emirates</td>
+                        <td> 5.08 </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Saudi Arabia</td>
+                        <td>  4.87  </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </div>
-
-
-
-    <hr>
-
-    <h4>Tonnes of CO<sub>2</sub> Per Capita</h4>
-
 
     <hr>
 
@@ -159,8 +230,6 @@
         <img src="img/ghg_mole.jpg">
         <hr>
     </ul>
-
-
 
     <h3>The Greenhouse Effect</h3>
     <div class="row">
@@ -186,21 +255,18 @@
         <h2>Consequences of Global Warming</h2>
     </div>
     <div>
-        <p>
         <ul>
             <li>Thermal expansion - Ocean becoming warmer</li>
             <li>Global average temperature increase</li>
             <li>Sea level rise</li>
             <li>Glacial ice melting</li>
         </ul>
-        </p>
     </div>
 
     <div class="page-header">
         <h2>Ice-Albedo Feedback</h2>
     </div>
 
-    <p>
     <div class="row">
         <div class="col-md-8">
             <img src="img/ice1.png"> <br/>
@@ -214,7 +280,6 @@
             </p>
         </div>
     </div>
-    </p>
 
     <p>
     <div class="row">
@@ -248,7 +313,6 @@
         </div>
     </p>
 
-
     <div class="page-header">
         <h2>Global Glacier Changes</h2>
     </div>
@@ -263,24 +327,22 @@
         </p>
     </div>
 
-
     <!-- Globe goes here -->
     <div id="globe" style="padding-top: 20px;">
     </div>
 
-</div> <!--- col-md-12-->
-</div><!-- /.container -->
+</div><!-- /col-md-12-->
+</div><!-- /.container-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<!--Initialize tooltips -->
+<!-- Initialize tooltips -->
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
 </script>
-
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
