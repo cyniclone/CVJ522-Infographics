@@ -1,6 +1,5 @@
 // CO2 Chart
 function ghgco2 () {
-    console.log("ghgco2 called");
 
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
         width = 738 - margin.left - margin.right,
@@ -36,7 +35,7 @@ function ghgco2 () {
         }, // data -> display
         yAxis = d3.svg.axis().scale(yScale).orient("left");
 
-    yAxis.tickFormat(d3.format("04d"));
+    yAxis.tickFormat(d3.format("03d"));
 
     // add the graph canvas to the correct ID div
     var svg = d3.select('#chart-ghg-co2').append("svg")
@@ -255,7 +254,7 @@ function ghgnos () {
         }, // data -> display
         yAxis = d3.svg.axis().scale(yScale).orient("left");
 
-    yAxis.tickFormat(d3.format("04d"));
+    yAxis.tickFormat(d3.format("03d"));
 
     // add the graph canvas to the correct ID div
     var svg = d3.select('#chart-ghg-nos').append("svg")
