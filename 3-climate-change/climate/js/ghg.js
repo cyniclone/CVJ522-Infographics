@@ -36,8 +36,8 @@ function ghgch4 () {
 
     yAxis.tickFormat(d3.format("04d"));
 
-    // add the graph canvas to the body of the webpage
-    var svg = d3.select('#ghg-ch4').append("svg")
+    // add the graph canvas to the correct ID div
+    var svg = d3.select('#chart-ghg-ch4').append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
@@ -45,9 +45,9 @@ function ghgch4 () {
         ;
 
     // add the tooltip area to the webpage
-    var tooltip = d3.select("#ghg-ch4").append("div")
+    /*var tooltip = d3.select("#ghg-ch4").append("div")
         .attr("class", "tooltip")
-        .style("opacity", 0);
+        .style("opacity", 0);*/
 
     // load data
     d3.csv("data/ghg-ch4.csv", function (error, data) {
@@ -94,7 +94,9 @@ function ghgch4 () {
             .attr("r", 3.5)
             .attr("cx", xMap)
             .attr("cy", yMap)
-            .style("fill", function (d) { return '#135267'; })
+            .style("fill", function (d) { return '#135267'; });
+
+            /* tooltip stuff
             .on("mouseover", function(d) {
                 tooltip.transition()
                     .duration(200)
@@ -108,7 +110,6 @@ function ghgch4 () {
                 tooltip.transition()
                     .duration(500)
                     .style("opacity", 0);
-            });
-
+            });  */
     });
 }

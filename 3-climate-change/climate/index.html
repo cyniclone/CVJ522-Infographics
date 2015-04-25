@@ -236,12 +236,6 @@
         <hr>
     </ul>
 
-    <h4>Fossil Fuel Consumption</h4>
-    <script src="js/ghg.js"></script>
-    <div id="ghg-ch4" class="d3-chart">
-
-    </div>
-
     <h3>The Greenhouse Effect</h3>
     <div class="row">
         <div class="col-md-8">
@@ -252,8 +246,51 @@
                 Increasing emissions of greenhouse gases (fossil fuels, carbon dioxide) due to human activity has led to a build up in the atmosphere that absorbs and emits infrared thermal radiation which is then redirected back at the planet.
             </p>
         </div>
+    </div>
+
+    <h3>A Closer Look at Greenhouse Gases</h3>
+
+    <p>An alarming trend can be seen when examining the global atmospheric concentration of certain greenhouse gases. CO<sub>2</sub>, methane and nitrous oxide have grown steadily
+    in their atmospheric concentration as a result of fossil-fuel use. </p>
+
+    <p>These gases are measured in PPM (parts per million) or PPB (parts per billion),
+    which denotes the ratio of gas molecules to other atmospheric molecules. Other things equal, an increase in concentration of these greenhouse gases
+    results in sea level rise, global average temperature rise, and glacial melting.</p>
+
+    <div role="tabpanel">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#ghg-co2" aria-controls="ghg-co2" role="tab" data-toggle="tab">
+                <h4>Change in CO<sub>2</sub></h4></a>
+            </li>
+            <li role="presentation"><a href="#ghg-ch4" aria-controls="ghg-ch4" role="tab" data-toggle="tab">
+                <h4>Change in CH4 (Methane)</h4></a>
+            </li>
+            <li role="presentation"><a href="#ghg-nos" aria-controls="ghg-nos" role="tab" data-toggle="tab">
+                <h4>Change in Nitrous Oxide</h4></a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <script src="js/ghg.js"></script>
+        <div class="tab-content">
+
+
+            <div role="tabpanel" class="tab-pane active fade fade-in" id="ghg-co2">
+                a
+            </div>
+            <div role="tabpanel" class="tab-pane fade fade-in" id="ghg-ch4">
+                <div id="chart-ghg-ch4" class="d3-chart"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade fade-in" id="ghg-nos">
+                c
+            </div>
+        </div>
 
     </div>
+
+
+
 
     <a href="img/ghg-by-source-sector.JPG">
         <img src="img/ghg-by-source-sector.JPG" style="width:80%;">
