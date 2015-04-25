@@ -272,13 +272,13 @@
 
 
             <div role="tabpanel" class="tab-pane active fade fade-in" id="ghg-co2">
-                a
+                <div id="chart-ghg-co2" class="d3-chart"></div>
             </div>
             <div role="tabpanel" class="tab-pane fade fade-in" id="ghg-ch4">
                 <div id="chart-ghg-ch4" class="d3-chart"></div>
             </div>
             <div role="tabpanel" class="tab-pane fade fade-in" id="ghg-nos">
-                c
+                <div id="chart-ghg-nos" class="d3-chart"></div>
             </div>
         </div>
 
@@ -368,7 +368,9 @@
     })
 
    // Check if DOM is ready for D3
+    $( document ).ready(ghgco2());
     $( document ).ready(ghgch4());
+    $( document ).ready(ghgnos());
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
