@@ -1,5 +1,3 @@
-//Rotating Orthographic
-//http://bl.ocks.org/mbostock/6619561
 
 function init() {
     var width = 800,

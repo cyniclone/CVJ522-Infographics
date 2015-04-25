@@ -54,6 +54,30 @@ h4 {
     font-family: 'PT Sans', sans-serif;
 }
 
+/* D3 Chart Styling */
+
+.d3-chart {
+    font: 11px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.dot {
+    stroke: #000;
+}
+
+.tooltip {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    pointer-events: none;
+}
+
 #title {
     /*background-color: #C2E7CE;*/
 }
