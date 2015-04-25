@@ -255,29 +255,26 @@
     <div role="tabpanel">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#ghg-co2" aria-controls="ghg-co2" role="tab" data-toggle="tab">
+            <li role="presentation" class="active"><a class="atab" href="#a_tab" aria-controls="a_tab" role="tab" data-toggle="tab">
                 <h4>Change in CO<sub>2</sub></h4></a>
             </li>
-            <li role="presentation"><a href="#ghg-ch4" aria-controls="ghg-ch4" role="tab" data-toggle="tab">
+            <li role="presentation"><a class="btab" href="#b_tab" aria-controls="b_tab" role="tab" data-toggle="tab">
                 <h4>Change in CH4 (Methane)</h4></a>
             </li>
-            <li role="presentation"><a href="#ghg-nos" aria-controls="ghg-nos" role="tab" data-toggle="tab">
+            <li role="presentation"><a class="ctab" href="#c_tab" aria-controls="c_tab" role="tab" data-toggle="tab">
                 <h4>Change in Nitrous Oxide</h4></a>
             </li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <script src="js/ghg.js"></script>
 
-            <div role="tabpanel" class="tab-pane active fade fade-in" id="ghg-co2">
-                <div id="chart-ghg-co2" class="d3-chart"></div>
+            <div role="tabpanel" class="tab-pane active fade fade-in" id="a_tab">
+                <acontent></acontent>
             </div>
-            <div role="tabpanel" class="tab-pane fade fade-in" id="ghg-ch4">
-                <div id="chart-ghg-ch4" class="d3-chart"></div>
+            <div role="tabpanel" class="tab-pane fade fade-in" id="b_tab">
             </div>
-            <div role="tabpanel" class="tab-pane fade fade-in" id="ghg-nos">
-                <div id="chart-ghg-nos" class="d3-chart"></div>
+            <div role="tabpanel" class="tab-pane fade fade-in" id="c_tab">
             </div>
         </div>
     </div>
@@ -364,11 +361,20 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
+</script>
 
-   // Check if DOM is ready for D3
-    $( document ).ready(ghgco2());
-    $( document ).ready(ghgch4());
-    $( document ).ready(ghgnos());
+<!-- Tab Switching -->
+<script>
+    $.ajaxSetup ({
+        // Disable caching of AJAX responses
+        // Used when debugging
+        cache: false
+    });
+
+    $.getScript("js/ghg/a.js");
+    $(".atab").click(function() {
+        $.getScript("js/ghg/a.js");
+    })
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
