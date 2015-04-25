@@ -21,6 +21,9 @@ function ghgch4 () {
         }, // data -> display
         xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 
+    xAxis.tickFormat(d3.format("04d")); // Remove commas from years
+
+
     // setup y
     var yValue = function (d) {
             return d["PPB"];
@@ -31,12 +34,15 @@ function ghgch4 () {
         }, // data -> display
         yAxis = d3.svg.axis().scale(yScale).orient("left");
 
+    yAxis.tickFormat(d3.format("04d"));
+
     // add the graph canvas to the body of the webpage
     var svg = d3.select('#ghg-ch4').append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        ;
 
     // add the tooltip area to the webpage
     var tooltip = d3.select("#ghg-ch4").append("div")
@@ -66,8 +72,7 @@ function ghgch4 () {
             .attr("class", "label")
             .attr("x", width)
             .attr("y", -6)
-            .style("text-anchor", "end")
-            .text("YEAR");
+            ;
 
         // y-axis
         svg.append("g")
@@ -89,10 +94,21 @@ function ghgch4 () {
             .attr("r", 3.5)
             .attr("cx", xMap)
             .attr("cy", yMap)
-            .style("fill", function (d) {
-                return '#0000FF';
+            .style("fill", function (d) { return '#135267'; })
+            .on("mouseover", function(d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html(xValue(d)
+                    + ", " + yValue(d) + ")")
+                    .style("left", (d3.event.pageX + 5) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
             })
-        ;
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
 
     });
 }
