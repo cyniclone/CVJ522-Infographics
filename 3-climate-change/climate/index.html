@@ -37,6 +37,8 @@
 </head>
 
 <body role="document">
+
+<!--Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -48,14 +50,6 @@
             </button>
             <a class="navbar-brand" href="#">CVJ522</a>
         </div>
-        <!---
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div> --> <!--/.nav-collapse -->
     </div>
 </nav>
 
@@ -90,6 +84,7 @@
         relative AAL (percentage of GDP).
     </p>
 
+    <!-- Choropleth Tabs -->
     <div role="tabpanel">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
@@ -129,10 +124,10 @@
     <div role="tabpanel">
 
         <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#co2" aria-controls="co2" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions by Country (thousands of tonnes)</h4></a></li>
-                <li role="presentation"><a href="#co2pc" aria-controls="co2pc" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions Per Capita</h4></a></li>
-            </ul>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#co2" aria-controls="co2" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions by Country (thousands of tonnes)</h4></a></li>
+            <li role="presentation"><a href="#co2pc" aria-controls="co2pc" role="tab" data-toggle="tab"><h4>CO<sub>2</sub> Emissions Per Capita</h4></a></li>
+        </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
@@ -289,9 +284,6 @@
 
     </div>
 
-
-
-
     <a href="img/ghg-by-source-sector.JPG">
         <img src="img/ghg-by-source-sector.JPG" style="width:80%;">
     </a>
@@ -323,7 +315,6 @@
         </div>
     </div>
 
-    <p>
     <div class="row">
         <div class="col-md-8">
             <img src="img/ice2.png"> <br/>
@@ -334,20 +325,17 @@
             </p>
         </div>
     </div>
-    </p>
 
-    <p>
-        <div class="row">
-            <div class="col-md-8">
-                <img src="img/ice3.png"> <br/>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    Due to the Greenhouse Effect the ice caps on the poles are melting faster than ever before causing the solar radiation to be absorbed in the newly exposed areas in the ocean. The warming seabed is causing the permafrost to melt and crack open releasing methane and carbon gases which consequently means more heat lowering the albedo range of the ice due to melting.
-                </p>
-            </div>
+    <div class="row">
+        <div class="col-md-8">
+            <img src="img/ice3.png"> <br/>
         </div>
-    </p>
+        <div class="col-md-4">
+            <p>
+                Due to the Greenhouse Effect the ice caps on the poles are melting faster than ever before causing the solar radiation to be absorbed in the newly exposed areas in the ocean. The warming seabed is causing the permafrost to melt and crack open releasing methane and carbon gases which consequently means more heat lowering the albedo range of the ice due to melting.
+            </p>
+        </div>
+    </div>
 
     <div class="page-header">
         <h2>Global Glacier Changes</h2>
@@ -380,7 +368,7 @@
     })
 
    // Check if DOM is ready for D3
-    $( document).ready(ghgch4());
+    $( document ).ready(ghgch4());
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
