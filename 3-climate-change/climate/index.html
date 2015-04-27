@@ -26,7 +26,6 @@
     <!-- Scripting -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
-    <script src="js/globe.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,13 +81,89 @@
     <hr>
 
 
-    <h3>What Are the Economic Consequences?</h3>
+    <h3>What Are the Consequences?</h3>
+
+    <p>
+        Two main metrics are used to evaluate damage done by sea level rise: assets and population. The graphs below show which
+        cities stand to lose the most in terms of population and assets.
+    </p>
 
     <p>
         <a href="#" data-toggle="tooltip" data-placement="top" title="Average Annual Losses">AAL</a> is one of the
         key indicators of economic risk that a country faces from sea level rise. Cities are ranked by both absolute AAL and
         relative AAL (percentage of GDP).
     </p>
+
+    <!-- NESTED TABS -->
+    <div class="tabbable boxed parentTabs">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#2005">2005</a>
+            </li>
+            <li><a href="#2050">2050</a>
+            </li>
+            <li><a href="#2070">2070</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="2005">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#sub11">2005 - Absolute AAL</a>
+                        </li>
+                        <li><a href="#sub12">2005 - Relative AAL</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="sub11">
+                            <p>Tab 1.1</p>
+                        </div>
+                        <div class="tab-pane fade" id="sub12">
+                            <p>Tab 1.2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="2050">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#sub21">2050 AAL</a>
+                        </li>
+                        <li><a href="#sub22">Comparing 2050 with 2005</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="sub21">
+                            <p>Tab 2.1</p>
+                        </div>
+                        <div class="tab-pane fade" id="sub22">
+                            <p>Tab 2.2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="2070">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#sub31">2070 - Assets</a>
+                        </li>
+                        <li><a href="#sub32">2070 - Population</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="sub31">
+                            <p>Tab 3.1</p>
+                        </div>
+                        <div class="tab-pane fade" id="sub32">
+                            <p>Tab 3.2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END NESTED TABS-->
 
     <div role="tabpanel">
         <!-- Nav tabs -->
@@ -440,9 +515,9 @@
 
 <script>
 //    Initialize tooltips
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+//    $(function () {
+//        $('[data-toggle="tooltip"]').tooltip()
+//    })
 
    // Check if DOM is ready for D3
     $( document ).ready(function(){
@@ -451,8 +526,15 @@
     })
 
     function activaTab(tab){
-        $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+        $('.nav-tabs a[href="#' + tab + '"]').tab('show')
     };
+
+    // For nested tabs
+    $("ul.nav-tabs a").click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
