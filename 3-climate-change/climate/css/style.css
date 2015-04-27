@@ -52,12 +52,18 @@ h5 {
 
 .chart-title {
     font-family: 'PT Sans', sans-serif;
-    padding: 20px;
+    margin: 10px 0 0 40px;
 }
 
 .table-co2 {
     font-family: 'PT Serif', sans-serif;
 }
+
+ul.nav-tabs {
+    padding-top: 10px;
+}
+
+
 
 /* D3 Chart Styling */
 
