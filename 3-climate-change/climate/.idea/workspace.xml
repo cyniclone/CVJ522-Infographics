@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43479ae-6fd4-45b4-9668-6df37a4ee436" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/arctic-anomalies.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/arctic-anomalies2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site.iws" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.677193">
-              <caret line="386" column="12" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.24678363">
+              <caret line="300" column="19" selection-start-line="300" selection-start-column="19" selection-end-line="300" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -557,23 +556,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30526316">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/glacier1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/sector-icons-01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43976608">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding>
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430100087000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.677193">
-          <caret line="386" column="12" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.24678363">
+          <caret line="300" column="19" selection-start-line="300" selection-start-column="19" selection-end-line="300" selection-end-column="19" />
           <folding />
         </state>
       </provider>
