@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43479ae-6fd4-45b4-9668-6df37a4ee436" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/arctic-anomalies.png" afterPath="$PROJECT_DIR$/img/arctic-anomalies.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sector-icons-01.png" afterPath="$PROJECT_DIR$/img/sector-icons-01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sector-icons-02.png" afterPath="$PROJECT_DIR$/img/sector-icons-02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sector-icons-03.png" afterPath="$PROJECT_DIR$/img/sector-icons-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sector-icons-04.png" afterPath="$PROJECT_DIR$/img/sector-icons-04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sector-icons-05.png" afterPath="$PROJECT_DIR$/img/sector-icons-05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sector-bars.png" afterPath="$PROJECT_DIR$/img/sector-bars.png" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3766082">
-              <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.053801168">
+              <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#object#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -645,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3766082">
-          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.053801168">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#object#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
