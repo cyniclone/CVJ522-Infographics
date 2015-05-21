@@ -6,7 +6,7 @@ var uy = d3.scale.linear()
     .rangeRound([height, 0]);
 
 var ucolor = d3.scale.ordinal()
-    .range(["#98abc5", "#7b6888"]);
+    .range(['#144134', '#4B6A52']);
 
 var uxAxis = d3.svg.axis()
     .scale(ux)

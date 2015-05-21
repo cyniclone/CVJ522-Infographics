@@ -11,7 +11,9 @@ var y = d3.scale.linear()
     .rangeRound([height, 0]);
 
 var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+    //.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+    .range(['#144134', '#4B6A52', '#92A785', '#AAB6A6', '#676B61', '#A9C1B3']);
+
 
 var xAxis = d3.svg.axis()
     .scale(x)
